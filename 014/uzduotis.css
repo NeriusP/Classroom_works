@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 33.33333%;
+    height: 200px;
+    background-color: darkgreen;
+    float: left;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    /* border-top: 1px solid white; */
+
+    border: 1px solid white;
+}
+
+/* .box1 {
+    background-color: lightseagreen;
+}
+
+.box2 {
+    background-color: mediumaquamarine;
+} */
+
+@media screen and (max-width: 1000px) {
+
+    .box {
+        width: 50%;     
+     }
+
+    .box3 {
+        width: 100%;     
+    }
+}
+
+    @media screen and (max-width: 500px) {
+
+        .box {
+            width: 100%;     
+        }
+    }

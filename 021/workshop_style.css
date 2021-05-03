@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'FontColors';
+    src:  url('colors.woff') format('woff');
+  }
+
+  .fc {
+    font-family: 'FontColors', sans-serif;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontColors;
+    font-size: 14px;
+    text-rendering: auto;
+    text-transform: none;
+ }
+
+ .hamburger::before {
+    content: "1";
+}
+
+.user::before {
+    content: "m";
+/* position: relative; */
+ }
+
+ .cart::before {
+    content: "3";
+
+ }
+
+header {
+    height: 60px;
+    background-color: darkkhaki;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+header::cue {
+content: '';
+display: table;
+clear: both;
+}
+
+header nav {
+    float: left;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+header ul li label {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+header nav ul li a {
+    color: black;
+    line-height: 20px;
+}
+
+header ul.icons {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul.icons li {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+header ul.icons li a {
+    color: grey;
+    line-height: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: lightblue;
+    padding: 30px;
+    color: olive;
+    font-size: 60px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    letter-spacing: -.31em;;
+    font-size: 0;
+    /* padding-top: 2px; */
+    }
+
+
+.gallery .image {
+width: 33.33333%;
+display: inline-block;
+/* padding: 2px; */
+}
+
+.hamburger {
+    display: none;
+} 
+
+@media screen and (min-width: 800px) /*and (max-width: 2020px)*/{
+    #ham.checked + header {
+        margin-bottom: 225px;
+    } 
+
+    .hamburger {
+        display: inline-block;
+    } 
+
+    header {
+        margin-bottom: 225px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+        
+    }
+
+    #ham.checked + header nav {
+        margin-bottom: 225px;
+    } 
+
+    header nav ul li {
+        display: block;
+        padding: 10px 7px;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    header nav ul li a {
+        color: black;
+        line-height: 22px;
+        font-size: 22px;
+        
+        display: block;
+    }
+
+}

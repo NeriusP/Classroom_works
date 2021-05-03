@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+.row {
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color:cornflowerblue;
+}
+
+h2 {
+    text-align: center;
+    color:white;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    hight: auto;
+    border-radius: 50%;
+    transition:  all 0.5s;
+}
+
+
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted  cornflowerblue;
+    
+}
+
+.row.col1 > div {
+    width: 100%;
+}
+.row.col2 > div {
+    width: 50%;
+}
+.row.col3 > div {
+    width: 33.33333%;
+}
+.row.col4 > div {
+    width: 25%;
+}
+
+.row .box {
+    float: left;
+    padding: 5px;
+
+}
+
+.row .box .bin{
+    /* background-color: bisque; */
+    /* border: 1px solid brown; */
+    /* height: 300px; */
+    /* margin: 20px; */
+    position: relative;
+    
+}
+
+.row .box .bin p{
+text-align: center;
+}
+
+.row .box .bin .img-container {
+    /* padding: 10px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.img-container:hover::after {
+    opacity: 0.3;
+}
+/* .img-container:active img{
+    opacity: 0;
+} */
+
+/* .img-container::after {
+    content: '';
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-image: linear-gradient(to right, gray , white);
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 10; */
+}
+
+nav {
+    width: 100%;
+    display: block;
+    background-color: cornflowerblue;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    background-color: cornflowerblue;
+    width: 60%;
+    display: block;
+    /* display: inline-block; */
+}
+
+ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ul li {
+    float: left;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    transition: all 300ms;
+    width: 25%;
+    text-align: center;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: rgb(102, 202, 241);
+}
+
+/* div.title.col2 {
+    width: calc(100% - 320px);
+    position: absolute;
+    bottom: 20px;
+} */
+
+div.title {
+    width: 50px;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0.8;
+    /* font-family: 'Righteous', cursive; */
+    transition: all 1s;
+    /* opacity: 0; */
+    z-index: 12;
+    }
+
+    div.bin:hover .title {
+        /* opacity: 1; */
+    }
+
+    div.title:hover {
+        width: 90px;
+        font-size: 40px;
+    }
+
+
+
+    .back img {
+        width: 100px;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 11;
+    }
+
+        /* .end {
+        padding: 5px;
+    } */
+
+    /* .back a {
+        color: white;
+        text-decoration: none;
+    } */

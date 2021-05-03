@@ -1,0 +1,28 @@
+img {
+    width: 150px;
+    height: auto;
+   margin: 10px;
+}
+
+p {
+/* display:inline-block;
+width: 50%; */
+text-align: justify;
+}
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/* .stop{
+    clear: both;
+} */
+
+.container::after {
+    content: '';
+    display: table; /* įsiminti naudoti "display: table", kai norime sustabdyti float'ą  */
+    clear: both;
+}

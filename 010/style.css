@@ -1,0 +1,41 @@
+p {
+    color: yellow;
+}
+
+h1 p:first-child {
+    color:green;
+}
+
+p:first-child {
+    color:blue;
+}
+
+p:last-child {
+    color:red;
+}
+
+li {
+    color: brown;
+}
+
+li:first-child {
+    color:black;
+}
+
+li:last-child {
+    opacity:0;
+    display: none;
+    visibility: hidden;
+}
+
+body > div {
+    background-color: salmon
+}
+
+body > div p:first-child{
+    color: whitesmoke
+}
+
+div + p {
+    background-color: yellow;
+  }

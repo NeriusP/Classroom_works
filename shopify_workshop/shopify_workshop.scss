@@ -1,0 +1,1554 @@
+@font-face {
+    font-family: 'FontColors';
+    src:  url('colors.woff') format('woff');
+  }
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: "Noto Serif", serif;
+    text-transform: none;
+    font-size: 16px;
+    color: #404752;
+}
+
+a {
+    cursor: pointer;
+}
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 18px;
+    color: #404752;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    border: 3px solid;
+}
+
+.btn:hover {
+   color: #6d798b;
+   border-color: #6d798b;
+}
+/* -----------------------------Headeris------------------------ */
+.headeris {
+    padding: 17px 30px;
+    position: relative;
+}
+
+@media screen and (max-width: 619px) {
+
+   .headeris {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+ }
+
+ @media screen and (max-width: 959px) {
+
+   .headeris {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+ }
+
+.headeris .desine {
+    position: absolute;
+    right: 19px;
+    text-align: right;
+    height: 26px;
+}
+
+.headeris .desine a {
+    text-decoration: none;
+    height: 30px;
+ }
+ 
+ .headeris .desine a i{
+     color: #404752;
+     font-size: 30px;
+  }
+.headeris .kaire a {
+   text-decoration: none;
+}
+
+.headeris .kaire a i{
+    color: #404752;
+    font-size: 30px;
+ }
+
+ .headeris .kaire {
+    position: absolute;
+    left: 19px;
+}
+
+.headeris .centras {
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.headeris .centras a.logo {
+    text-decoration: none;
+    max-width: 70%;
+}
+
+.headeris .centras a.logo h1 {
+    line-height: 40px;
+}
+
+.headeris .centras a.logo h1 img{
+    width: 170px;
+}
+
+
+ .fc {
+    font-family: 'FontColors', sans-serif;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontColors;
+    font-size: 14px;
+    text-rendering: auto;
+    text-transform: none;
+ }
+
+ .hamburger::before {
+    content: "1";
+ }
+
+ .user::before {
+    content: "m";
+ }
+
+ .search::before {
+    content: "2";
+ }
+ 
+ .cart::before {
+    content: "3";
+ }
+
+ @media screen and (max-width: 619px) {
+
+   .user::before {
+      content: "";
+   }
+
+   .cart::before {
+      content: "";
+   }
+
+ }
+
+ @media screen and (max-width: 959px) {
+
+   .user::before {
+      content: "";
+   }
+ }
+ 
+
+.headeris .nav-meniu {
+text-align: center;
+padding: 0 30px 10px;
+z-index: 100;
+}
+
+.headeris .background {
+    background-color: #f3f0ee;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    z-index: -1; 
+}
+
+@media screen and (max-width: 959px) {
+
+   .headeris .background {
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+  }
+
+}
+@media screen and (max-width: 619px) {
+
+   .headeris .background {
+      left: 15px;
+      right: 15px;
+      bottom: 0;
+   }
+
+  }
+
+
+
+
+.headeris .nav-meniu ul li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 16px;
+
+    display: inline-block;
+    padding: 10px;
+    color: #404752;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+     
+}
+
+.headeris .nav-meniu ul li a:hover span{
+    border-bottom: 2px solid #fa766a;     
+}
+
+.headeris .nav-meniu ul li {
+    /* line-height: 18px; */
+    display: inline-block;
+}
+
+.headeris .nav-meniu ul {
+    list-style: none;
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 619px) {
+
+   .headeris .nav-meniu {
+      display: none;
+  }
+
+ }
+
+.pagrindinis .cntnt.collapsed {
+   margin-top: 0;
+}
+
+.pagrindinis .cntnt.no-padding {
+   padding: 0;
+}
+
+/* -----------------------------Iškelti į puslapį  produktai------------------------ */
+.iskelti_pr {
+    margin: 0 30px 0 30px;
+}
+
+.iskelti_pr .iskeltas {
+padding: 30px;
+width: 100%;
+height: 600px;
+background-color: #f3f0ee;
+margin-bottom: 30px;
+position: relative;
+}
+
+@media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas {
+      height: auto !important;
+      }
+}
+
+.iskelti_pr .iskeltas .container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas > .container {
+     
+      height: calc((100vw - 30px) * 1.0);
+     
+  }
+  
+  }
+
+.iskelti_pr .iskeltas .container .right {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+@media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas .container .right {
+      float: none;
+      width: 100%;
+      // height: 100%;
+  }
+  
+ }
+
+.iskelti_pr .iskeltas .container .right a .image-container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iskeltas-1 {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Hacha_01.webp');
+}
+
+.iskeltas-2 {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Flashlight01.jpg');
+}
+
+.iskeltas-3 {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Raincoat03.webp');
+}
+
+
+.iskelti_pr .iskeltas a.info {
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+    }
+
+    @media screen and (max-width: 959px) {
+      .iskelti_pr .iskeltas a.info {
+         left: 40px;
+         right: 40px;
+         
+       }
+    }
+
+
+    @media screen and (max-width: 619px) {
+    .iskelti_pr .iskeltas a.info {
+      position: relative !important;
+      left: auto;
+      right: auto;
+      top: auto !important;
+      height: auto;
+      width: 100%;
+      padding: 15px 0;
+    }  
+   }
+
+
+        .iskelti_pr .iskeltas a.info .container .left {
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 619px) {
+         .iskelti_pr .iskeltas a.info .container .left {
+            width: 100% !important;
+            height: auto;
+         }  
+        }
+
+.iskelti_pr .iskeltas a.info .container .left .turinio-container {
+    max-width: 500px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+ @media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container {
+      height: auto;
+      text-align: center;
+      padding: 15px 15px 0;
+   }  
+ }
+
+
+.iskelti_pr .iskeltas a.info .container .left .turinio-container .title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 65px;
+    line-height: 66px;
+    color: #404752;
+    font-weight: 700;
+ }
+
+ @media screen and (max-width: 959px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container .title {
+      font-size: 55px;
+   }
+ }
+
+
+ @media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container .title {
+      font-size: 36px;
+      line-height: 40px;
+   } 
+}
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .price {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 40px;
+    color: #fa766a;
+    margin-top: 10px;
+ }
+
+ @media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container .price {
+      font-size: 30px;
+       line-height: 34px;
+       display: inline-block;
+   }
+}
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .price .striped {
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: 30px;
+ }
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas {
+    margin: 30px 0 0;
+   //  
+ }
+
+ @media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas {
+      margin: 30px auto 0px;
+   }
+}
+
+@media screen and (max-width: 619px) {
+   .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas .shape {
+      margin: 0 auto;
+   }
+}
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas .shape {
+    display: table;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 72px;
+    height: 72px;
+    border: 3px solid #404752;
+ }
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas .shape:hover {
+   border-color: #6d798b;
+ }
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas .shape:hover span {
+    color: #6d798b;
+  }
+
+ .iskelti_pr .iskeltas a.info .container .left .turinio-container .mygtukas .shape span {
+    display: table-cell;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 18px;
+    color: #404752;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    
+ }
+
+/* -----------------------------Produktų kolekcijos------------------------ */
+.kolekcijos {
+    margin: 20px 30px 30px 20px;
+}
+
+.kolekcijos .kolekcija {
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.kolekcijos .kolekcija h4 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    /* text-transform: none; */
+    font-size: 26px;
+    color: #f0ece8;
+    text-decoration: underline;
+    text-align: center;
+    /* max-width: none; */
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    }
+
+.kolekcijos .kolekcija .image-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f3f0ee; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+/* transition: opacity 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s; */
+}
+
+.img-1 {
+    background-image: url(http://127.0.0.1:5500/shopify_workshop/img/img-1-1200.jpg);
+}
+
+.img-2 {
+    background-image: url(http://127.0.0.1:5500/shopify_workshop/img/img-2-1200.jpg);
+}
+
+.img-3 {
+    background-image: url(http://127.0.0.1:5500/shopify_workshop/img/img-3-1200.jpg);
+}
+
+/* -----------------------------Iškelta kolekcija------------------------ */
+
+
+.iskelta_kolekcija {
+    padding: 30px
+    /* background-color: #f3f0ee; */
+}
+/* -----------------------------Iškeltos kolekcijos headeris------------------------ */
+.iskelta_kolekcija .kolekcijos_headeris {
+    margin: 0 0 25px;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 619px) {
+   .iskelta_kolekcija .kolekcijos_headeris ul {
+      overflow: scroll;
+      display: block;
+      white-space: nowrap;
+      padding: 0 0 10px;
+  }
+}
+
+.iskelta_kolekcija .kolekcijos_headeris > a {
+    text-decoration: none;
+}
+
+.iskelta_kolekcija .kolekcijos_headeris a h2 {
+    /*i 620 grida -  margin-bottom: 20px;  */
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 29px;
+    color: #fa766a;
+    font-weight: 700;
+    text-decoration: underline;
+    /* display: inline-block; */
+    margin: 0 0 30px;
+}
+
+ul.kolekcijos_kategorijos {
+    list-style-type: none;
+}
+
+ul.kolekcijos_kategorijos li{
+    display: inline-block;
+}
+
+ul.kolekcijos_kategorijos li a {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 15px;
+    color: #404752;
+    text-decoration: none;
+    margin: 0 20px 5px 0;
+}
+
+ul.kolekcijos_kategorijos li a span {
+    border-bottom: 2px solid transparent;
+}
+
+ul.kolekcijos_kategorijos li a:hover span {
+    border-bottom-color: #fa766a;
+}
+
+ul.kolekcijos_kategorijos li.all a span {
+    border-bottom-color: #fa766a;
+}
+
+ul.kolekcijos_kategorijos li a sup {
+    color: #fa766a;
+    font-size: 10px;
+    margin: 0 0 0 4px;
+}
+
+/* -----------------------------Iškeltos kolekcijos objektai------------------------ */
+.kolekcijos_objektai {
+    margin-left: -10px;
+    }
+
+.kolekcijos_objektai .kolekcijos_objektas {
+    /* display: block;
+    position: relative; */
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.kolekcijos_objektai .kolekcijos_objektas .turinys {
+    position: relative;
+   /* height: auto; */
+   /* width: 100%; */
+}
+
+.kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container {
+    position: relative;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container img {
+    width: 100%;
+  }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container::after {
+    content: '';
+    position: relative;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol1::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/vaso_02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol2::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/hacha_02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol3::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Raincoat04.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol4::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/cuerda02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol5::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Cantimplora_06.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol6::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/Abrigo02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol7::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/SleepingBag_02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .kol-image-container.kol8::after {
+    background: url('http://127.0.0.1:5500/shopify_workshop/img/cuchillo02.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ 
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys:hover .kol-image-container img {
+    opacity: 0;
+    
+ }
+
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .info {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    left: 5px;
+    width: auto;
+    overflow: hidden;
+    opacity: 0;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .info .metas{
+    text-align: center;
+    padding: 10px;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .info .metas .price{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    color: #fa766a;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .info .metas .price.stripped {
+    font-size: 18px;
+    text-decoration: line-through;
+    display: inline;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .info .metas .title {
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 28px;
+    display: inline-block;
+    max-width: 190px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #404752;
+    /* text-transform: none; */
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys:hover .info {
+    opacity: 1;
+    
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .tag .saleshape {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 43.4375px;
+    height: 43.4375px;
+    color: #ffffff;
+    background: #fa766a;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 13px;
+    font-weight: 700;
+    /* display: table; */
+
+ }
+
+ .kolekcijos_objektai .kolekcijos_objektas .turinys .tag .saleshape span {
+    /* display: table-cell; */
+    line-height: 43.4375px;
+ }
+/* -----------------------------Slideshow------------------------ */
+
+
+.slideshow {
+    height: 550px;
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+.slideshow .image-container{
+    width: 100%;
+    height: 100%;
+    background-image: url('http://127.0.0.1:5500/shopify_workshop/img/slideshow_nieve2_1512x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* object-fit: cover; */
+}
+
+.slideshow .image-container .info {
+   color: white;
+   display: inline-block;
+   text-align: center;
+   margin: 190px 0;
+}
+
+.slideshow .image-container .info h1 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 65px;
+    line-height: 66px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+@media screen and (max-width: 619px) {
+   .slideshow .image-container .info h1 {
+      font-size: 45px;
+    line-height: 50px;
+   }
+}
+
+
+.slideshow .image-container .info h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 30px;
+    line-height: 31px;
+    color: #fa766a;
+    margin: 0 0 20px;
+}
+
+@media screen and (max-width: 619px) {
+   .slideshow .image-container .info h2 {
+      font-size: 25px;
+    line-height: 30px;
+   }
+}
+
+.slideshow .image-container .info .button span{
+    color: #ffffff;
+    border: 3px solid white;
+    
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    transition: border-color 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s
+ }
+
+ .slideshow .image-container .info .button:hover span {
+    color: #cccccc;
+    border-color: #cccccc;
+ }
+/* -----------------------------Citata------------------------ */
+ .citata {
+    padding: 30px;
+    margin: 30px 30px 0;
+    text-align: center;
+ }
+
+ .citata .turinys {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 28px;
+    line-height: 38px;
+    color: #404752;
+    text-transform: none;
+ }
+
+ .citata .turinys blockquote {
+    margin: 40px 80px;
+ }
+/* -----------------------------Ikonų gridas------------------------ */
+ .papildoma_info {
+    padding: 30px;
+    margin: 30px 30px 0;
+    text-align: center;
+ }
+
+ .papildoma_info .icon-grid {
+    /* font-size: 0; */
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .papildoma_info .icon-grid .icon-grid-cell {
+    min-width: 100px;
+    padding: 15px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+ }
+
+
+
+ .papildoma_info .icon-grid .icon-grid-cell .icon {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    margin: 0 0 10px;
+}
+
+.papildoma_info .icon-grid .icon-grid-cell .icon i {
+    font-size: 85px;
+    color: #fa766a;
+}
+
+.papildoma_info .icon-grid .icon-grid-cell h3 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 4px;
+ }
+
+.eco::before {
+    content: "n";
+ }
+
+ .international::before {
+    content: "q";
+ }
+
+ .recycled::before {
+    content: "s";
+ }
+
+ .returns::before {
+    content: "u";
+ }
+
+ .payment::before {
+    content: "C";
+ }
+
+ .order::before {
+    content: "z";
+ }
+
+ .local::before {
+    content: "D";
+ }
+
+ .rss::before {
+    content: "a";
+ }
+/* -----------------------------Puslapio blogo naujienos------------------------ */
+ .blogas {
+    padding: 30px;
+    margin: 0;
+ }
+
+ .blogas a {
+    text-decoration: none;
+ }
+
+ .blogas > a {
+    letter-spacing: normal;
+    text-rendering: auto;
+ }
+
+ .blogas a h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 29px;
+    color: #fa766a;
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 0 30px;
+ }
+
+ .blogas i.rss {
+    border-bottom: 0;
+    font-size: 20px;
+    margin-left: 3px;
+    color: #fa766a;
+ }
+
+ .blogas .tekstai h1 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 40px;
+    font-weight: 700;
+    word-wrap: break-word;
+ }
+
+ .blogas .tekstai h1 a{
+    text-decoration: none;
+    color: #404752;
+ }
+
+ .blogas .tekstai h3 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fa766a;
+    text-transform: none;
+    margin: 10px 0 30px 2px;
+ }
+ 
+ hr {
+    display: block;
+    max-width: 70px;
+    height: 3px;
+    background: #404752;
+    border: 0;
+    margin: 0 0 30px;
+    text-align: left;
+ }
+
+ .blogas .tekstai .tekstas {
+    word-wrap: break-word;
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 27px;
+    color: #404752;
+ }
+
+ .blogas .tekstai .btn {
+    margin-top: 20px;
+ }
+
+ .blogas .tekstai{
+    margin-left: -30px;
+}
+
+ .blogas .tekstai .blokas-kaire {
+    display: block;
+    float: left;
+    padding-left: 30px;
+ }
+
+ .blogas .tekstai .blokas-desine {
+    display: block;
+    float: left;
+    padding-left: 30px;
+ }
+
+ .blogas .tekstai::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+ .blogas .tekstai .extra {
+    margin: 20px 0 10px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 15px;
+    color: #404752;
+ }
+
+ .blogas .tekstai .extra .comments {
+    display: inline-block;
+    margin-right: 14px;
+ }
+
+ .blogas .tekstai .extra .tags {
+    display: inline-block;
+    margin-right: 14px;
+ }
+
+ .blogas .tekstai .extra .comments a {
+    text-decoration: none;
+    color: #404752;
+ }
+
+ .blogas .tekstai .extra .tags a {
+    text-decoration: none;
+    margin: 0 4px;
+    color: #404752;
+ }
+
+ .blogas .tekstai .extra .tags a:hover {
+   text-decoration: underline;
+}
+
+ .blogas .tekstai .extra i {
+    color: #fa766a;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 2px;
+    position: relative;
+    top: 9px;
+ }
+
+ .comment::before {
+    content: "c";
+ }
+
+ .tagas::before {
+    content: "b";
+ }
+ /* -----------------------------Paveiksliukas su teksto bloku------------------------ */
+
+ .img_su_tekstu_1, .img_su_tekstu_2 {
+    background: #f3f0ee;
+    padding: 30px;
+    margin: 30px 30px 0;
+    position: relative;
+}
+
+
+.img_su_tekstu_1 .info h1 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    text-transform: none;
+    font-size: 40px;
+    color: #404752;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.img_su_tekstu_2 .info h1 {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   text-transform: none;
+   font-size: 40px;
+   color: #404752;
+   font-weight: 700;
+   word-wrap: break-word;
+}
+
+.img_su_tekstu_1 .info p {
+  margin-top: 20px;
+}
+
+.img_su_tekstu_2 .info p {
+   margin-top: 20px;
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   color: #404752;
+   text-transform: none;
+ }
+
+
+/* -----------------------------Naujienlaiškis------------------------ */
+
+.naujienlaiskis {
+   background: #f3f0ee;
+   padding: 30px;
+   margin: 30px 30px 0;
+}
+
+.naujienlaiskis .vidus{
+   padding: 30px 0;
+}
+
+.naujienlaiskis .informacija {
+   text-align: center;
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 0 0 30px;
+}
+
+.naujienlaiskis .informacija h1{
+   margin-bottom: 10px;
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   text-transform: none;
+   font-size: 40px;
+   color: #404752;
+   font-weight: 700;
+   text-transform: none;
+}
+
+.naujienlaiskis .informacija p{
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-size: 20px;
+   color: #404752;
+   font-weight: 400;
+   text-transform: none;
+   margin-top: 10px;
+}
+
+.naujienlaiskis form {
+   max-width: 540px;
+    margin: 0 auto;
+}
+
+.naujienlaiskis form .table{
+   display: table;
+   width: 100%;
+   background: #f3f0ee;
+}
+
+form input, form textarea, form select, form label {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   color: #404752;
+   text-transform: none;
+}
+
+.naujienlaiskis form .table input.text {
+   padding: 16px 15px 15px;
+   display: table-cell;
+   width: 100%;
+}
+
+.naujienlaiskis form .table span {
+   display: table-cell;
+   width: 1%;
+   vertical-align: top;
+}
+
+.naujienlaiskis form .table span input {
+   padding: 13px 20px;
+   margin-left: 5px;
+   margin-right: 10px;
+   background: #404752;
+   border-color: #404752;
+   color: #ffffff;
+}
+
+.naujienlaiskis .btn:hover {
+   background: #4b5360;
+  }
+
+
+/* -----------------------------Footer------------------------ */
+
+.footeris {
+   max-width: 1940px;
+   margin: 30px auto 0;
+}
+
+.footeris .top {
+   background: #3e4450;
+   padding: 30px;
+}
+
+.footeris .top .col h3 {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   text-transform: none;
+   font-size: 15px;
+   color: #fa766a;
+   margin: 0 0 15px;
+}
+
+.footeris .top .col {
+   float: left;
+    /* width: 25%; */
+    padding-right: 20px;
+}
+
+.footeris .top .col ul {
+   list-style-type: none;
+   float: left;
+   width: 40%;
+   max-width: 200px;
+}
+
+.footeris .top .col ul li {
+   margin: 0 0 4px;
+}
+
+.footeris .top .col li {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 24px;
+   color: #ffffff;
+   text-transform: none;
+}
+
+.footeris .top .col li a, .footeris .top .col p a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.footeris .top .col li a:hover {
+   text-decoration: underline;
+   border-bottom: 0;
+}
+
+.footeris .top:after {
+   display: table;
+   content: '';
+   clear: both;
+}
+
+.footeris .top .col p, .footeris .top .col li {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 24px;
+   color: #ffffff;
+   text-transform: none;
+}
+
+.footeris .top .col form .table {
+   display: table;
+   width: 100%;
+   max-width: 360px;
+   background: #3e4450;
+}
+
+.footeris .top .col form .table input.text {
+   padding: 6px 10px 5px;
+   display: table-cell;
+   width: 100%;
+   border: 0;
+}
+
+.footeris .top .col form .table span {
+   display: table-cell;
+   width: 1%;
+   vertical-align: top;
+}
+
+.footeris .top .col form .table span input {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   text-transform: none;
+   font-size: 17px;
+   color: #fa766a;
+   font-weight: 700;
+   background: transparent;
+   border: 2px solid;
+   padding: 3px 10px;
+   margin-left: 5px;
+   margin-right: 10px;
+}
+
+.footeris .top .col.right {
+   text-align: right;
+   padding-right: 0;
+   padding-left: 20px;
+}
+
+.footeris .top .col p.connect a i.fc {
+   font-size: 34px;
+}
+
+.facebook::before {
+   content: "f";
+}
+
+.twitter::before {
+   content: "w";
+}
+
+.pinterest::before {
+   content: "p";
+}
+
+.instagram::before {
+   content: "E";
+}
+
+.fc.instagram {
+   transform: scale(0.75);
+   position: relative;
+   top: -2px;
+}
+
+.footeris .bottom {
+   color: #cccccc;
+   background: #2a2d32;
+   padding: 15px 30px;
+   width: 100%;
+}
+
+.footeris .bottom .left {
+   text-align: left;
+   margin-top: 11px;
+}
+
+.footeris .bottom .text {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   text-transform: none;
+   font-size: 14px;
+   color: #cccccc;
+   line-height: 18px;
+}
+
+.footeris .bottom .text a {
+   color: #cccccc;
+   text-decoration: none;
+}
+
+.footeris .bottom .text a:hover {
+   color: #ffffff;
+}
+
+
+.footeris .bottom .right {
+   float: right;
+}
+
+.footeris .bottom .left {
+   float: left;
+}
+
+.footeris .bottom {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+/* ------------------------------------------------- Išsiskleidžiantys mygtukai apačioje ------------------------------------------------------ */
+.hide, .visually-hidden {
+   display: none;
+}
+
+.footeris .bottom .disclosures .disclosure {
+   display: inline-block;
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   text-transform: none;
+   font-size: 14px;
+   color: #cccccc;
+}
+
+.footeris .bottom .disclosures .disclosure:last-child {
+   margin-left: 8px;
+}
+
+.disclosure .disclosure__toggle {
+   border: 1px solid #333;
+   border-radius: 3px;
+   cursor: pointer;
+   padding: 8px 15px 8px;
+   appearance: none;
+   line-height: 1.2;
+   text-indent: 0.01px;
+   white-space: nowrap;
+}
+
+.disclosure .disclosure__list {
+   display: none;
+   background-color: #ffffff;
+   position: absolute;
+   z-index: 200;
+   bottom: 115%;
+   overflow-y: auto;
+   border: 1px solid #404752;
+   padding: 11px 0px;
+   border-radius: 2px;
+}
+
+.disclosure .disclosure__list li {
+   list-style: none;
+   white-space: nowrap;
+   text-align: left;
+   padding: 5px 15px 4px;
+}
+
+.disclosure .disclosure__list li a {
+   color: #404752;
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__list li {
+   text-align: right;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__list li a {
+   color: #cccccc;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__toggle {
+   color: #cccccc;
+   border-color: #cccccc;
+   background: transparent;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__toggle .select-icon {
+   fill: #cccccc;
+}
+
+.disclosure .disclosure__toggle .select-icon {
+   cursor: pointer;
+   display: inline-block;
+   fill: #798c9c;
+   pointer-events: none;
+   width: 12px;
+   height: 12px;
+   margin-left: 5px;
+   vertical-align: middle;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__list {
+   background-color: #2a2d32;
+   border-color: #cccccc;
+   right: 0;
+}
+
+.footeris .bottom .disclosures .disclosure .disclosure__toggle:hover {
+   color: #ffffff;
+   border-color: #ffffff;
+}
+
+

@@ -1,0 +1,425 @@
+
+.ls {
+    letter-spacing: normal;
+    text-rendering: auto;
+}
+
+
+.kolekcijos .kolekcija {
+    height: 200px;
+}
+
+
+/* .iskelta_kolekcija .kolekcijos_headeris ul {
+    overflow: scroll;
+    display: block;
+    white-space: nowrap;
+    padding: 0 0 10px;
+} */
+
+/* Paveikslelis su tekstu - Mobile */
+
+.img_su_tekstu_1 .background, .img_su_tekstu_2 .background {
+    z-index: 1;
+    position: static;
+    
+}
+
+.img_su_tekstu_1 .info {
+    float: none;
+    z-index: 2;
+    position: relative;
+    padding: 15px;
+    margin: 0;
+    background: #f3f0ee;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+}
+
+
+
+.img_su_tekstu_2 .info {
+    float: none;
+    z-index: 2;
+    position: relative;
+    padding: 15px;
+    margin: 0;
+    background: #f3f0ee;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+}
+
+.img_su_tekstu_1 .background-img {
+    background-image: url('http://127.0.0.1:5500/shopify_workshop/img/tiendacampana02_1512x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+.img_su_tekstu_2 .background-img {
+    background-image: url('http://127.0.0.1:5500/shopify_workshop/img/fuego_1512x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+} 
+
+/* ------------------------------------------------ */
+
+
+
+.footeris .top .col {
+    margin-bottom: 30px;
+}
+
+.footeris .top .col.right {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+ .cntnt {
+    padding: 15px;
+    margin: 15px 15px 0;
+}
+
+.pagrindinis .cntnt.collapsed {
+    margin-top: 0;
+ }
+
+ .pagrindinis .cntnt.no-padding {
+    padding: 0;
+ }
+
+ .pagrindinis .cntnt.expanded {
+    margin-left: 0;
+    margin-right: 0;
+ }
+
+/* ---------------------Footerio apačia - mobiliojo ekranas--------------- */ 
+/* .footeris .bottom .right {
+    float: none;
+    width: 100%;
+ }
+ 
+ .footeris .bottom .left {
+    float: none;
+    width: 100%;
+ } */
+ 
+ 
+/* ---------------------Iškeltas produktas - mobiliojo ekranas--------------- */ 
+/* .iskelti_pr .iskeltas .container {
+    max-width: 1100px;
+    height: calc((100vw - 30px) * 1.0);
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.iskelti_pr .iskeltas .container .right {
+    float: none;
+    width: 100% !important;
+}
+
+.iskelti_pr .iskeltas .container .right a .image-container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+@media screen and (min-width: 620px) {
+
+.kolekcijos {
+    margin: 20px 20px 0;
+}
+
+.kolekcijos .kolekcija {
+    height: 340px;
+}
+
+/* .iskelta_kolekcija .kolekcijos_headeris ul {
+    overflow: scroll;
+    display: block;
+    white-space: nowrap;
+    padding: 0 0 10px;
+} */
+ /* -------------------------- Paveikslelis su tekstu Middle ----------------------------*/
+.img_su_tekstu_1 .background, .img_su_tekstu_2 .background {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img_su_tekstu_1 .info {
+    z-index: 2;
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    width: 400px;
+    float: right;
+    text-align: right;
+}
+
+.img_su_tekstu_1::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.img_su_tekstu_2 .info {
+    z-index: 2;
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    width: 400px;
+    float: left;
+}
+
+.img_su_tekstu_2::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.img_su_tekstu_1 .background-img {
+    background-image: url('http://127.0.0.1:5500/shopify_workshop/img/tiendacampana02_1512x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.img_su_tekstu_2 .background-img {
+    background-image: url('http://127.0.0.1:5500/shopify_workshop/img/fuego_1512x.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}  
+
+/* --------------------------------------------------------------- */
+
+
+.footeris .top .col {
+    margin-bottom: 30px;
+}
+
+.footeris .top .col.right {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 20px;
+}
+/* ---------------------Footerio apačia - midi ekranas--------------- */
+/* .footeris .bottom .right {
+    float: right;
+ }
+ 
+ .footeris .bottom .left {
+    float: left;
+ }
+ 
+ .footeris .bottom {
+    content: '';
+    display: table;
+    clear: both;
+ } */
+
+/* ---------------------Iškeltas produktas - midi ekranas--------------- */ 
+/* .iskelti_pr .iskeltas .container {
+    max-width: 1100px;
+    height: calc((100vw - 30px) * 1.0);
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.iskelti_pr .iskeltas .container .right {
+    float: none;
+    width: 100% !important;
+}
+
+.iskelti_pr .iskeltas .container .right a .image-container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+/* ----------------------------------------- */
+
+.cntnt {
+    padding: 20px;
+    margin: 20px 20px 0;
+}
+
+.pagrindinis .cntnt.collapsed {
+    margin-top: 0;
+ }
+
+ .pagrindinis .cntnt.no-padding {
+    padding: 0;
+ }
+
+ .pagrindinis .cntnt.expanded {
+    margin-left: 0;
+    margin-right: 0;
+ }
+
+}
+
+@media screen and (min-width: 960px) /*and (max-width: 2020px)*/{
+    
+    .kolekcijos {
+        margin: 20px 30px 30px 20px;
+    } 
+
+    .kolekcijos .kolekcija {
+        height: 380px;
+    }
+
+    /* .iskelta_kolekcija .kolekcijos_headeris ul {
+        overflow: hidden;
+           } */
+           /* -------------------------- Paveikslelis su tekstu Large ----------------------------*/
+
+           .img_su_tekstu_1 .background, .img_su_tekstu_2 .background {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+           .img_su_tekstu_1 .info {
+            z-index: 2;
+            position: relative;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            width: 400px;
+            float: right;
+            text-align: right;
+        }
+        
+        .img_su_tekstu_1::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .img_su_tekstu_2 .info {
+            z-index: 2;
+            position: relative;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            width: 400px;
+            float: left;
+        }
+        
+        .img_su_tekstu_2::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .img_su_tekstu_1 .background-img {
+            background-image: url('http://127.0.0.1:5500/shopify_workshop/img/tiendacampana02_1512x.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img_su_tekstu_2 .background-img {
+            background-image: url('http://127.0.0.1:5500/shopify_workshop/img/fuego_1512x.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }   
+
+    .footeris .top .col {
+            margin-bottom: 0;
+    }
+
+    .footeris .top .col.right {
+        text-align: right;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+/* ---------------------Footerio apačia - didelis ekranas--------------- */
+    /* .footeris .bottom .right {
+        float: right;
+     }
+     
+     .footeris .bottom .left {
+        float: left;
+     }
+     
+     .footeris .bottom {
+        content: '';
+        display: table;
+        clear: both;
+     } */
+
+
+
+/* ---------------------Iškeltas produktas - visas ekranas--------------- */
+    /* .iskelti_pr .iskeltas .container {
+        max-width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .iskelti_pr .iskeltas .container .right {
+        width: 60%;
+        height: 100%;
+        float: right;
+    }
+    
+    .iskelti_pr .iskeltas .container .right a .image-container {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    } */
+/* -------------------------------------------------------------------------- */
+.cntnt {
+    padding: 30px;
+    margin: 30px 30px 0;
+}
+
+.pagrindinis .cntnt.collapsed {
+    margin-top: 0;
+ }
+ 
+ .pagrindinis .cntnt.no-padding {
+    padding: 0;
+ }
+
+ .pagrindinis .cntnt.expanded {
+    margin-left: 0;
+    margin-right: 0;
+ }
+
+}

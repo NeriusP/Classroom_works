@@ -1,0 +1,41 @@
+
+#al1{
+    background-color: indianred;
+}
+
+.alfa.omega{
+    padding:8px;
+    border: 1px solid gray;
+    color:khaki
+}
+
+h1.beta span{
+    color:rgb(9, 255, 0);
+        }
+h1.gama i{
+    color:teal;
+        }
+
+
+.alfa{
+    color:darkred;
+    letter-spacing: 5px;
+    }            
+        
+.beta{
+     color:darkslategrey;
+     letter-spacing: 5px;
+     }
+
+.gama{
+    color:violet;
+        letter-spacing: 5px;
+     } 
+
+i{
+    color:springgreen
+}
+
+span{
+    color:gold;
+    }

@@ -1,0 +1,28 @@
+.op:hover {
+    background-color: lawngreen; 
+    width: 250px;
+    height: 250px;
+}
+
+.op{
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    transition: width  1s linear 1s;
+}
+
+.parent p{
+    color: lightsalmon;
+}
+
+/* .parent p.v1{
+    color: crimson;
+} */
+.parent div.abc:first-child {
+    color: red;
+}
+
+.parent p:last-child {
+    color: rebeccapurple;
+    font-weight: bold;
+}

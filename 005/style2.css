@@ -1,0 +1,94 @@
+.animal1.predator{
+    padding:8px;
+    border: 1px solid gray;
+    color:hotpink
+}
+
+#a1{
+    /* background-color: violet; */
+    color:tomato
+}
+
+.animal1 {
+    color: thistle;
+}
+h1.animal1 span{
+    color:indigo;
+}
+h1.animal1 span{
+    color:yellowgreen;
+}
+.animal2 {
+    color: tomato;
+}
+.animal3 {
+    color: yellowgreen;
+}
+/* span {
+    color: indigo;
+} */
+
+
+span {
+    color: red;
+}
+i {
+    color: blue;
+}
+code {
+    color: green;
+}
+
+body {
+    background-color: mistyrose;
+    letter-spacing: -.31em;
+    text-rendering: optimizespeed;
+    margin: 0;
+}
+ 
+div {
+    box-sizing: border-box;
+    zoom: 1;
+    letter-spacing: normal;
+    text-rendering: auto;
+}
+
+
+.box {
+    border: 1px solid hotpink;
+    background-color: lightblue;
+    border-left: none;
+    padding: 5px;
+    /* margin: 40px; */
+    height: 80px;
+    /* width: 33.33333%; */
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.box.first {
+    border-left: 1px solid hotpink;
+}
+
+.box span{
+    background-color:lightgray;
+    color:lemonchiffon;
+    display: block;
+    width: 40%;
+    margin:0 auto;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    top: calc(50% - 10px);
+}
+.box.row1 {
+    width: 50%;
+    }
+
+.box.row2 {
+    width: 33.33333%;
+    }
+
+.box.row3 {
+    width: 25%;
+    }

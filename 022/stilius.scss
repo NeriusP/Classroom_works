@@ -1,0 +1,32 @@
+$bortelis: 3px dotted green;
+$displejus: inline-block;
+
+h1 {
+    color: aquamarine;
+    display: $displejus;
+    border: $bortelis;
+    span {
+        color: blueviolet;
+        display: $displejus;
+        border: $bortelis;
+        i {
+            color: chocolate;
+            display: $displejus;
+            border: $bortelis;
+        }
+    }
+}
+
+.labas87 {
+    color: lawngreen;
+    &_bin {
+        
+        color: indigo;
+        &_container {
+            color: white;
+            width: 50px;
+            height: 50px;
+            background-color: indianred;
+        }
+    }
+}

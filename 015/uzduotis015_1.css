@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid white;
+    color: white;
+    height: 100px;
+    /* text-align: center; */
+    /* padding: 5%; */
+}
+
+.one {
+    background-color: darkgreen;
+}
+
+.two {
+    background-color: darkgreen;
+}
+
+.three {
+    background-color: darkgreen;
+}
+
+.four {
+    background-color: darkgreen;
+}
+
+.five {
+    background-color: darkgreen;
+}
+
+.six {
+    background-color: darkgreen;
+}
+.seven {
+    background-color: darkgreen;
+}
+
+.eight {
+    background-color: darkgreen;
+}
+
+.nine {
+    background-color: darkgreen;
+}
+.ten {
+    background-color: darkgreen;
+}
