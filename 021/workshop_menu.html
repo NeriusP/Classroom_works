@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="workshop_style.css">
 
@@ -13,18 +15,34 @@
     <div id="app">
         <input type="checkbox" id="ham">
         <header>
+                      
+              <div class="side-nav">
+                  <a href='' class="close">
+                    <i class="fc fc-close"></i>
+                  </a>
+                 
+                    <ul class="menu"> 
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">Catalog</a></li>
+                        <li class="plus"> <a href="" >Collections</a>
+                            <label for="pliusas">
+                                <div><span>+</span></div>
+                            </label>
+                            <input type="checkbox" id="pliusas" style="display:none">
+                            <ul class="nav-collections">
+                                <li> <a href="">Backpacks</a></li>
+                                <li> <a href="">Containers</a></li>
+                                <li> <a href="">Men's Apparel</a></li>
+                                <li> <a href="">Women's Apparel</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="">Blog</a></li>
+                        <li> <a href="">About Us</a></li>
+                        <li> <a href="">Contact</a></li>
+                        <li> <a href="">Sign In</a></li>
+                    </ul>
+               </div>   
             
-            <nav> 
-                <ul class="menu"> 
-                    <li> <a href="">Home</a></li>
-                    <li> <a href="">Catalog</a></li>
-                    <li> <a href="">Collections</a></li>
-                    <li> <a href="">Blog</a></li>
-                    <li> <a href="">About Us</a></li>
-                    <li> <a href="">Contact</a></li>
-                    <li> <a href="">Sign In</a></li>
-                </ul>
-            </nav>
                 <ul class="icons">
                     <li><a class="icon-user" href=''>
                         <i class="fc user"></i>
@@ -37,7 +55,8 @@
                     </li>
                     <li class="hamburg">
                         <label for="ham">
-                        <i class="fc hamburger" ></i>
+                            <i class="fc hamburger" ></i>
+                        </label>    
                    
                 </li>
                 </ul>
@@ -67,10 +86,11 @@
                 <div class="image">
                     <img src="https://picsum.photos/id/1009/400/300">
                 </div>
+                
             </div>
         </main>
         <footer>
-
+            
         </footer>
     </div>
 </body>
