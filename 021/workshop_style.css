@@ -23,7 +23,10 @@
 
  .cart::before {
     content: "3";
+ }
 
+ .fc-close::before {
+    content: "x";
  }
 
 header {
@@ -39,20 +42,102 @@ display: table;
 clear: both;
 }
 
-header nav {
+.side-nav {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding: 30px;
+    background-color: #fa766a;
+}
+
+.side-nav .close i.fc {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 37px 0 0;
+}
+
+
+.side-nav ul li a {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: none;
+    touch-action: none;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.side-nav ul li.plus span {
+    margin-left: 10px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-size: 34px;
+    color: #ffffff;
+    text-transform: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.side-nav ul li.plus div {
+    display: inline-block;
+}   
+
+.side-nav ul ul {
+    display: none;
+    margin: 0 0 10px;
+    transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nav-collections {
+    transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#pliusas:checked .side-nav ul li.plus label div {
+    transform: rotate(45deg);
+}
+
+
+#pliusas:checked + ul.nav-collections {
+    display: block;
+}
+
+.side-nav ul ul li {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.side-nav ul ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px 0 5px;
+}
+
+
+/* header nav {
     float: left;
     margin-top: 10px;
-}
+} */
 
-header nav ul li {
+/* header nav ul li {
     display: inline-block;
     padding: 0 7px;
-}
+} */
 
-header ul li label {
+/* header ul li label {
     display: inline-block;
     padding: 0 7px;
-}
+} */
 
 header nav ul li a {
     color: black;
@@ -72,6 +157,12 @@ header ul.icons li {
 header ul.icons li a {
     color: grey;
     line-height: 20px;
+}
+
+header ul.icons li label {
+    color: grey;
+    line-height: 20px;
+    cursor: pointer;
 }
 
 h1 {
@@ -101,10 +192,11 @@ display: inline-block;
 }
 
 .hamburger {
-    display: none;
+    display: inline-block;
+    /* display: none; */
 } 
 
-@media screen and (min-width: 800px) /*and (max-width: 2020px)*/{
+/* @media screen and (min-width: 800px) and (max-width: 2020px){ 
     #ham.checked + header {
         margin-bottom: 225px;
     } 
@@ -148,4 +240,4 @@ display: inline-block;
         display: block;
     }
 
-}
+}  */
