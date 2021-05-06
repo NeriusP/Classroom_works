@@ -11,12 +11,16 @@
 }
 
 body {
-    max-width: 2000px;
-    margin: 0 auto;
     font-family: "Noto Serif", serif;
     text-transform: none;
     font-size: 16px;
     color: #404752;
+    width: 100%;
+}
+
+.grid-container {
+   max-width: 2000px;
+   margin: 0 auto;
 }
 
 a {
@@ -44,11 +48,216 @@ a {
    color: #6d798b;
    border-color: #6d798b;
 }
+
+// Į kairį šoną nuslenkantis krepšelio meniu
+
+.side-nav-cart {
+   position: absolute;
+   color: #ffffff;
+   background: #404752;
+   top: 0;
+   right: -400px;
+   width: 400px;
+   max-width: 100%;
+   height: 100%;
+   text-align: left;
+   padding: 17px 30px 17px;
+   transition: all 0.5s;
+}
+
+.side-nav-cart i.fc-close {
+   position: absolute;
+   top: 20px;
+   right: 26px;
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 28px;
+}
+
+// .side-nav-cart i.fc {
+  
+//    right: -4px;
+//    top: 3px;
+// }
+
+.side-nav-cart {
+ .side-nav-cart-header {
+      border-bottom: 3px solid #ffffff;
+            h2 {
+               font-family: Montserrat, sans-serif;
+               font-style: normal;
+               text-transform: none;
+               font-size: 25px;
+               color: #ffffff;
+               font-weight: 700;
+               margin: 0 0 20px;
+            }
+   }   
+   .side-nav-cart-container {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px 30px;
+       h3 {
+            font-family: "Noto Serif", serif;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 18px;
+            color: #fa766a;
+            font-style: italic;
+            margin: 10px;
+       }
+   }
+}
+
+#cartas:checked ~ #app {
+   left: -400px;
+  }
+
+//   #cartas:checked ~ .side-nav {
+  
+//   }
+
+// Į dešinį šoną nuslenkantis navigacijos meniu
+
+.side-nav {
+   position: fixed;
+   top: 0;
+   left: -300px;
+   width: 300px;
+   height: 100vh;
+   padding: 17px 30px 30px;
+   background-color: #fa766a;
+   /* display: none; */
+}
+
+.side-nav label i.fc {
+   color: #ffffff;
+   font-size: 28px;
+   cursor: pointer;
+}
+
+.side-nav ul.menu {
+   list-style: none;
+   margin: 23px 0 0;
+}
+
+
+.side-nav ul li a {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-size: 34px;
+   color: #ffffff;
+   font-weight: 700;
+   text-transform: none;
+   text-decoration: none;
+   touch-action: none;
+   padding: 10px 0;
+   line-height: 42px;
+   display: inline-block;
+}
+
+.side-nav ul li a:hover {
+   text-decoration: underline;
+}
+
+.side-nav ul li.plus label span {
+   margin-left: 10px;
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-size: 34px;
+   color: #ffffff;
+   display: inline-block;
+   transition: all 0.5s;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+
+.side-nav ul ul {
+   height: 0;
+   overflow: hidden;
+   /* display: none; */
+   }
+
+ul.nav-collections {
+   transition: all 0.5s;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+#app {
+   position: relative;
+   right: 0;
+   transition: right 0.5s;
+}
+
+// #ham:checked + #app {
+//    right: -300px;
+//   }
+#ham:checked + .side-nav {
+transform: translateX(300px);
+}
+
+#ham:checked ~ #app .grid-container {
+   height: 100vh;
+   overflow: hidden;
+}
+
+/* #ham:checked + #app .side-nav {
+   display: block;
+} */
+
+#pliusas:checked + label span {
+   transform: rotate(45deg);
+}
+
+
+#pliusas:checked ~ ul.nav-collections {
+   height: 152px;
+   margin: 0 0 10px;
+}
+
+.side-nav ul ul li {
+   margin: 0;
+   padding-left: 15px;
+}
+
+.side-nav ul ul li a {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 29px;
+   padding: 5px 0;
+}
+
+.fc-close::before {
+   content: "x";
+}
+
+
+
 /* -----------------------------Headeris------------------------ */
 .headeris {
     padding: 17px 30px;
     position: relative;
 }
+
+.headeris .kaire {
+   z-index: 10;
+}
+
+.headeris .desine {
+   z-index: 10;
+}
+
+.headeris .centras {
+   z-index: 1;
+}
+
 
 @media screen and (max-width: 619px) {
 
@@ -80,19 +289,32 @@ a {
     height: 30px;
  }
  
- .headeris .desine a i{
+ .headeris .desine a i {
      color: #404752;
      font-size: 30px;
   }
+
+  .headeris .desine i {
+   color: #404752;
+   font-size: 30px;
+}
+
+
 .headeris .kaire a {
    text-decoration: none;
 }
 
-.headeris .kaire a i{
-    color: #404752;
-    font-size: 30px;
+.headeris .kaire label{
+ 
+     display: block;
+     height: 30px;
+     width: 30px;
+   i {
+      color: #404752;
+      font-size: 30px;
+   }
  }
-
+ 
  .headeris .kaire {
     position: absolute;
     left: 19px;
@@ -132,6 +354,10 @@ a {
     content: "1";
  }
 
+ i.fc.hamburger {
+    cursor: pointer;
+ }
+
  .user::before {
     content: "m";
  }
@@ -143,6 +369,10 @@ a {
  .cart::before {
     content: "3";
  }
+
+ i.fc.cart {
+   cursor: pointer;
+}
 
  @media screen and (max-width: 619px) {
 

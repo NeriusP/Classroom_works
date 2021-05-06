@@ -36,19 +36,21 @@ header {
     /* overflow: hidden; */
 }
 
-header::cue {
+header::after {
 content: '';
 display: table;
 clear: both;
 }
 
 .side-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
+    left: -300px;
     width: 300px;
-    height: 100%;
-    padding: 30px;
+    height: 100vh;
+    padding: 17px 30px 30px;
     background-color: #fa766a;
+    /* display: none; */
 }
 
 .side-nav .close i.fc {
@@ -56,9 +58,9 @@ clear: both;
     font-size: 28px;
 }
 
-.side-nav ul {
+.side-nav ul.menu {
     list-style: none;
-    margin: 37px 0 0;
+    margin: 23px 0 0;
 }
 
 
@@ -72,44 +74,67 @@ clear: both;
     text-decoration: none;
     touch-action: none;
     padding: 10px 0;
+    line-height: 42px;
     display: inline-block;
 }
 
-.side-nav ul li.plus span {
+.side-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.side-nav ul li.plus label span {
     margin-left: 10px;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-size: 34px;
     color: #ffffff;
-    text-transform: none;
-    text-decoration: none;
     display: inline-block;
-    transition: all 0.5s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    transition: all 0.5s;
     font-weight: 500;
     cursor: pointer;
 }
 
-.side-nav ul li.plus div {
+/* .side-nav ul li.plus label span {
     display: inline-block;
-}   
+}    */
 
 .side-nav ul ul {
-    display: none;
-    margin: 0 0 10px;
-    transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+    height: 0;
+    overflow: hidden;
+    /* display: none; */
+    }
 
 ul.nav-collections {
-    transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.5s;
 }
 
-#pliusas:checked .side-nav ul li.plus label div {
+body {
+    overflow-x: hidden;
+}
+
+#app {
+    position: relative;
+    right: 0;
+    transition: right 0.5s;
+}
+
+#ham:checked + #app {
+    right: -300px;
+    height: 100vh;
+}
+
+/* #ham:checked + #app .side-nav {
+    display: block;
+} */
+
+#pliusas:checked + label span {
     transform: rotate(45deg);
 }
 
 
-#pliusas:checked + ul.nav-collections {
-    display: block;
+#pliusas:checked ~ ul.nav-collections {
+    height: 152px;
+    margin: 0 0 10px;
 }
 
 .side-nav ul ul li {
@@ -120,7 +145,8 @@ ul.nav-collections {
 .side-nav ul ul li a {
     font-size: 24px;
     font-weight: 500;
-    padding: 5px 0 5px;
+    line-height: 29px;
+    padding: 5px 0;
 }
 
 
