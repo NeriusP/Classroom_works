@@ -185,6 +185,7 @@
     background: rgba(255, 255, 255, 0.85);
     width: 400px;
     float: left;
+    text-align: left;
 }
 
 .img_su_tekstu_2::after {
@@ -329,6 +330,7 @@
             background: rgba(255, 255, 255, 0.85);
             width: 400px;
             float: left;
+            text-align: left;
         }
         
         .img_su_tekstu_2::after {
