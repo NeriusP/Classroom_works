@@ -1,3 +1,6 @@
+// @import grid_alt.css; 
+// @import grid.css; 
+
 @font-face {
     font-family: 'FontColors';
     src:  url('colors.woff') format('woff');
@@ -1087,15 +1090,69 @@ ul.kolekcijos_kategorijos li a sup {
    opacity: 0.5;
 }
 /* -----------------------------Slideshow------------------------ */
+.atgal::before {
+   content: "G";
+}
 
+.pirmyn::before {
+   content: "F";
+}
+
+.fotocircle-empty::before {
+   content: "B";
+}
+.fotocircle-full::before {
+   content: "A";
+}
 
 .slideshow {
     height: 550px;
     width: 100%;
     margin: 30px 0 0 0;
+    position: relative;
       a {
          text-decoration: none;
       }
+      .slide-atgal i {
+         left: 20px;
+      }
+
+      .slide-pirmyn i {
+         right: 20px;
+      }
+
+      .slide-atgal i, .slide-pirmyn i {
+         z-index: 2;
+         font-size: 40px;
+         line-height: 40px;
+         position: absolute;
+         top: calc(50% - 30px);
+         display: block;
+         width: 40px;
+         height: 40px;
+         padding: 0;
+         color: #ffffff;
+         border: none;
+         background: transparent;
+      }
+      .dots {
+         position: absolute;
+         bottom: 30px;
+         display: block;
+         width: 100%;
+         padding: 0;
+         list-style: none;
+         text-align: center;
+            li {
+               display: inline-block;
+               i {
+                  color: white;
+                  font-size: 20px;
+                  padding: 0 6px;
+               }
+            }
+      }
+
 }
 
 .slideshow .image-container{
@@ -1460,9 +1517,9 @@ ul.kolekcijos_kategorijos li a sup {
     content: "b";
  }
 
- .footeris .top .col ul li {
-    margin: 0 0 4px;
-}
+//  .footeris .top .col ul li {
+//     margin: 0 0 4px;
+// }
 
 @media screen and (max-width: 959px) {
    .blogas a h2 {
@@ -1476,6 +1533,8 @@ ul.kolekcijos_kategorijos li a sup {
    }
 }
  /* -----------------------------Paveiksliukas su teksto bloku------------------------ */
+
+ 
 
  .img_su_tekstu_1, .img_su_tekstu_2 {
     background: #f3f0ee;
@@ -1617,6 +1676,109 @@ form input, form textarea, form select, form label {
 .naujienlaiskis .btn:hover {
    background: #4b5360;
   }
+
+
+
+
+/* -----------------------------Žemėlapis------------------------ */
+
+// .zemelapis iframe .place-card.place-card-large {
+//    display: none;
+// }
+
+.zemelapis {
+   height: 523px;
+   .background {
+   background: #f3f0ee;
+   height: 100%;
+   padding: 30px;
+   position: relative;
+    .map-container {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+    }
+
+    .info {
+         z-index: 2;
+         position: relative;
+         padding: 30px;
+         margin: 60px 30px;
+         background: rgba(255, 255, 255, 0.85);
+         float: left;
+         max-width: 350px;
+            h1 {
+               font-family: Montserrat, sans-serif;
+               font-style: normal;
+               text-transform: none;
+               font-size: 40px;
+               color: #404752;
+               font-weight: 700;
+               word-wrap: break-word;
+            }
+            p:first-child {
+               margin-top: 10px;
+            }
+            p {
+               font-family: Montserrat, sans-serif;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 18px;
+               line-height: 28px;
+               color: #404752;
+               text-transform: none;
+               min-height: 16px;
+           } 
+           p:last-child {
+            margin-bottom: 20px;
+        }  
+      }
+     }
+}
+
+@media screen and (max-width: 959px) {
+   .zemelapis {
+      height: 673px;
+   }
+
+   .zemelapis .background .map-container {
+      position: static;
+      width: 100%;
+      height: 300px;
+      margin: 0 0 15px;
+   }
+
+   .zemelapis .background .info {
+      padding: 0 0 15px;
+      margin: 0;
+      background: #f3f0ee;
+      text-align: center;
+      max-width: none;
+      width: 100%;
+   }
+
+   .zemelapis .background .info p {
+      font-size: 22px;
+      line-height: 32px;
+   }
+ 
+}
+
+@media screen and (max-width: 619px) {
+   .map > .info {
+      padding: 0 0 15px;
+      margin: 0;
+      background: #f3f0ee;
+      text-align: center;
+      max-width: none;
+      width: 100%;
+  }
+}
+
 
 
 /* -----------------------------Footer------------------------ */
@@ -1943,5 +2105,23 @@ form input, form textarea, form select, form label {
       text-align: center;
       // margin-left: auto;
       // margin-right: auto;
+   }
+
+   .bottom .right .currency .curr-list {
+      left: 0;
+      right: auto;
+   }
+   .bottom .right .currency .curr-list li {
+      text-align: left;
+      padding: 10px 15px;
+   }
+
+   .bottom .right .language .lang-list {
+      left: 0;
+      right: auto;
+   }
+   .bottom .right .language .lang-list li {
+      text-align: left;
+      padding: 10px 15px;
    }
 }
