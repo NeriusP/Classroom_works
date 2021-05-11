@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("grid.css");
+@import url("grid_alt.css");
 @font-face {
   font-family: 'FontColors';
   src: url("colors.woff") format("woff");
@@ -1141,6 +1143,10 @@ ul.kolekcijos_kategorijos li a sup {
   }
 }
 
+.slideshow .image-container .info .button {
+  display: inline-block;
+}
+
 .slideshow .image-container .info .button span {
   color: #ffffff;
   border: 3px solid white;
@@ -1802,12 +1808,6 @@ form input, form textarea, form select, form label {
   padding: 3px 10px;
   margin-left: 5px;
   margin-right: 10px;
-}
-
-.footeris .top .col.right {
-  text-align: right;
-  padding-right: 0;
-  padding-left: 20px;
 }
 
 .footeris .top .col p.connect a i.fc {

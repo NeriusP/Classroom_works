@@ -1,5 +1,3 @@
-// @import grid_alt.css; 
-// @import grid.css; 
 
 @font-face {
     font-family: 'FontColors';
@@ -1215,6 +1213,10 @@ ul.kolekcijos_kategorijos li a sup {
    }
 }
 
+.slideshow .image-container .info .button {
+   display: inline-block;
+}
+
 .slideshow .image-container .info .button span{
     color: #ffffff;
     border: 3px solid white;
@@ -1227,6 +1229,7 @@ ul.kolekcijos_kategorijos li a sup {
     font-size: 18px;
     font-weight: 700;
     display: inline-block;
+   //  margin-left: ;
     text-align: center;
     padding: 10px;
     background: transparent;
@@ -1687,7 +1690,7 @@ form input, form textarea, form select, form label {
 // }
 
 .zemelapis {
-   height: 523px;
+   // height: 523px;
    .background {
    background: #f3f0ee;
    height: 100%;
@@ -1701,6 +1704,10 @@ form input, form textarea, form select, form label {
       right: 0;
       bottom: 0;
       height: 100%;
+    }
+
+    .gmap {
+      height: 523px;
     }
 
     .info {
@@ -1741,7 +1748,7 @@ form input, form textarea, form select, form label {
 }
 
 @media screen and (max-width: 959px) {
-   .zemelapis {
+   .gmap {
       height: 673px;
    }
 
@@ -1901,11 +1908,11 @@ form input, form textarea, form select, form label {
    margin-right: 10px;
 }
 
-.footeris .top .col.right {
-   text-align: right;
-   padding-right: 0;
-   padding-left: 20px;
-}
+// .footeris .top .col.right {
+//    text-align: right;
+//    padding-right: 0;
+//    padding-left: 20px;
+// }
 
 .footeris .top .col p.connect a i.fc {
    font-size: 34px;
@@ -2125,3 +2132,6 @@ form input, form textarea, form select, form label {
       padding: 10px 15px;
    }
 }
+
+@import url("grid.css"); 
+@import url('grid_alt.css'); 
