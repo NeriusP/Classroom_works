@@ -1689,12 +1689,17 @@ form input, form textarea, form select, form label {
 //    display: none;
 // }
 
+.gmap {
+   height: 100%;
+ }
+
 .zemelapis {
-   // height: 523px;
+   height: 100%;
    .background {
    background: #f3f0ee;
    height: 100%;
    padding: 30px;
+   height: 523px;
    position: relative;
     .map-container {
       z-index: 1;
@@ -1703,14 +1708,9 @@ form input, form textarea, form select, form label {
       left: 0;
       right: 0;
       bottom: 0;
-      height: 100%;
     }
 
-    .gmap {
-      height: 523px;
-    }
-
-    .info {
+       .info {
          z-index: 2;
          position: relative;
          padding: 30px;
@@ -1748,8 +1748,8 @@ form input, form textarea, form select, form label {
 }
 
 @media screen and (max-width: 959px) {
-   .gmap {
-      height: 673px;
+   .zemelapis .background {
+      height: 100%;
    }
 
    .zemelapis .background .map-container {
@@ -1760,6 +1760,7 @@ form input, form textarea, form select, form label {
    }
 
    .zemelapis .background .info {
+      float: none;
       padding: 0 0 15px;
       margin: 0;
       background: #f3f0ee;
