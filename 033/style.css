@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid grey;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+
+fieldset {
+    margin: 30px;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,QAAQ,CAAA,KAAC;EACT,QAAQ,CAAA,KAAC;EACT,QAAQ,CAAA,KAAC;CACZ;;AAED,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,aAAa;CAI3B;;AALD,AAEQ,EAFN,CAEM,IAAI,CAAC;EACD,SAAS,EAAE,aAAa;CAC3B;;AAGT,AAAA,EAAE,CAAC;EACC,QAAQ,CAAA,KAAC;EACT,SAAS,EAAE,aAAa;CAE3B",
+    "sources": [
+        "darbas.scss"
+    ],
+    "names": [],
+    "file": "darbas.css"
+}

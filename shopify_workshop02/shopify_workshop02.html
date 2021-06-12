@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopify_workshop02.css">
+    <title>Canopy</title>
+</head>
+<body>
+    <div class="cart-summary">
+        <div class="cart-summary__inner">
+            <div class="cart-summary__header cart-summary__section">
+                <h5 class="cart-summary__title">Your Order</h5>
+            </div>
+            <div class="cart-summary__empty">
+                <div class="cart-summary__section">
+                    <p>You have no items in your cart</p>
+                  </div>
+            </div>
+            <div class="cart-summary__promo-products-title cart-summary__section border-top">
+                <h6 class="cart-summary__item-list-header__title">Best sellers</h6>
+            </div>
+            <div class="cart-summary__promo-products">
+                <div class="cart-summary__section">
+                    <div class="cart-summary__item">
+                        <div class="cart-summary-item__image">
+                            <a href=''>
+                                <img src="img/CASHEWS_50x.jpg" alt="Cashews" 
+                                srcset="img/CASHEWS_50x.jpg 50w,
+                                img/CASHEWS_100x.jpg 100w" sizes="50px">
+                            </a>
+                        </div>
+                        <div class="cart-summary-item__detail">
+                            <div class="cart-summary-item__title-variant">
+                                <a class="cart-summary-item__title" href=''>Unsalted Cashews</a>
+                                <div class="cart-summary-item__weight">0.22 lb</div>
+                            </div>
+                            <div class="cart-summary-item__price">
+                                <span class="from">From</span>
+                                <span class="cart-summary-item__price-current theme-money">
+                                    <span class="money">
+                                        $3.00
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="cart-summary-item__form">
+                                <a class="btn" href=''>Show options</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary__item">
+                        <div class="cart-summary-item__image">
+                            <a href=''>
+                                <img src="img/SHRIMP_50x.jpg" alt="Shrimps" 
+                                srcset="img/SHRIMP_50x.jpg 50w,
+                                img/SHRIMP_100x.jpg 100w" sizes="50px">
+                            </a>
+                        </div>
+                        <div class="cart-summary-item__detail">
+                            <div class="cart-summary-item__title-variant">
+                                <a class="cart-summary-item__title" href=''>Atlantic Shrimp</a>
+                                <div class="cart-summary-item__weight">0.55 lb</div>
+                            </div>
+                            <div class="cart-summary-item__price">
+                                <span class="reduced-price cart-summary-item__price-current theme-money">
+                                    <span class="money">
+                                        $7.50
+                                    </span>
+                                </span>
+                                <span class="struck-out-price theme-money">
+                                    <span class="money">
+                                        $9.00
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="cart-summary-item__form">
+                                <a class="btn" href=''>Show options</a>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="cart-summary__promo cart-summary__section border-top">
+                <div class="cart-promo">
+                    <a href="">
+                        <div class="rimage-wrapper">
+                            <img class="rimage__image" src="img/gift-card-image_Crop_1080x.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrap">
+        <div class="page-wrap-inner">
+            <header>
+                <a href="" class="notification header-announcement" >Free Curbside Pickup now Available</a>
+                <div class="container header-container">
+                    <div class="toolbar">
+                        <span class="toolbar-links">
+                            <a href="">Log in</a>
+                            <span class="divider">/</span>
+                            <a href="">Join</a>
+                            <span class="divider">/</span>
+                          <form class="search-form">
+                            <!-- <input type="hidden" name="type" value="product"> -->
+                            <button type="submit" aria-label="Submit">
+                                <svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g stroke="currentColor" stroke-width="0.5">
+                                        <g transform="translate(0.000000, 0.472222)">
+                                        <path d="M14.3977778,14.0103889 L19,19.0422222 L17.8135556,20.0555556 L13.224,15.0385 C11.8019062,16.0671405 10.0908414,16.619514 8.33572222,16.6165556 C3.73244444,16.6165556 0,12.8967778 0,8.30722222 C0,3.71766667 3.73244444,0 8.33572222,0 C12.939,0 16.6714444,3.71977778 16.6714444,8.30722222 C16.6739657,10.4296993 15.859848,12.4717967 14.3977778,14.0103889 Z M8.33572222,15.0585556 C12.0766111,15.0585556 15.1081667,12.0365 15.1081667,8.30827778 C15.1081667,4.58005556 12.0766111,1.558 8.33572222,1.558 C4.59483333,1.558 1.56327778,4.58005556 1.56327778,8.30827778 C1.56327778,12.0365 4.59483333,15.0585556 8.33572222,15.0585556 Z"></path>
+                                        </g>
+                                    </g>
+                                 </svg>
+                            </button>
+                            <input type="text" placeholder="Search">
+                          </form>
+                      </span> 
+                      <span class="toolbar-social">
+                        <div class="social-links">
+                            <ul class="social-links__list">
+                            
+                                <li>
+                                    <a aria-label="Twitter" class="twitter" target="_blank" href="">
+                                        <svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Twitter</title>
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-240.000000, -299.000000)" fill="#000000">
+                                                    <path d="M288,303.735283 C286.236309,304.538462 284.337383,305.081618 282.345483,305.324305 C284.379644,304.076201 285.940482,302.097147 286.675823,299.739617 C284.771263,300.895269 282.666667,301.736006 280.418384,302.18671 C278.626519,300.224991 276.065504,299 273.231203,299 C267.796443,299 263.387216,303.521488 263.387216,309.097508 C263.387216,309.88913 263.471738,310.657638 263.640782,311.397255 C255.456242,310.975442 248.201444,306.959552 243.341433,300.843265 C242.493397,302.339834 242.008804,304.076201 242.008804,305.925244 C242.008804,309.426869 243.747139,312.518238 246.389857,314.329722 C244.778306,314.280607 243.256911,313.821235 241.9271,313.070061 L241.9271,313.194294 C241.9271,318.08848 245.322064,322.17082 249.8299,323.095341 C249.004402,323.33225 248.133826,323.450704 247.235077,323.450704 C246.601162,323.450704 245.981335,323.390033 245.381229,323.271578 C246.634971,327.28169 250.269414,330.2026 254.580032,330.280607 C251.210424,332.99061 246.961789,334.605634 242.349709,334.605634 C241.555203,334.605634 240.769149,334.559408 240,334.466956 C244.358514,337.327194 249.53689,339 255.095615,339 C273.211481,339 283.114633,323.615385 283.114633,310.270495 C283.114633,309.831347 283.106181,309.392199 283.089276,308.961719 C285.013559,307.537378 286.684275,305.760563 288,303.735283"></path>
+                                                </g>
+                                                <g transform="translate(-1332.000000, -476.000000)"></g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                            
+                                <li>
+                                    <a aria-label="Facebook" class="facebook" target="_blank" href="">
+                                        <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Facebook</title>
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-325.000000, -295.000000)" fill="#000000">
+                                                    <path d="M350.638355,343 L327.649232,343 C326.185673,343 325,341.813592 325,340.350603 L325,297.649211 C325,296.18585 326.185859,295 327.649232,295 L370.350955,295 C371.813955,295 373,296.18585 373,297.649211 L373,340.350603 C373,341.813778 371.813769,343 370.350955,343 L358.119305,343 L358.119305,324.411755 L364.358521,324.411755 L365.292755,317.167586 L358.119305,317.167586 L358.119305,312.542641 C358.119305,310.445287 358.701712,309.01601 361.70929,309.01601 L365.545311,309.014333 L365.545311,302.535091 C364.881886,302.446808 362.604784,302.24957 359.955552,302.24957 C354.424834,302.24957 350.638355,305.625526 350.638355,311.825209 L350.638355,317.167586 L344.383122,317.167586 L344.383122,324.411755 L350.638355,324.411755 L350.638355,343 L350.638355,343 Z"></path>
+                                                </g>
+                                                <g transform="translate(-1417.000000, -472.000000)"></g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                            
+                                <li>
+                                    <a aria-label="Youtube" class="youtube" target="_blank" href="">
+                                        <svg width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Youtube</title>
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-567.000000, -302.000000)" fill="#000000">
+                                                    <path d="M586.044,325.269916 L586.0425,311.687742 L599.0115,318.502244 L586.044,325.269916 Z M614.52,309.334163 C614.52,309.334163 614.0505,306.003199 612.612,304.536366 C610.7865,302.610299 608.7405,302.601235 607.803,302.489448 C601.086,302 591.0105,302 591.0105,302 L590.9895,302 C590.9895,302 580.914,302 574.197,302.489448 C573.258,302.601235 571.2135,302.610299 569.3865,304.536366 C567.948,306.003199 567.48,309.334163 567.48,309.334163 C567.48,309.334163 567,313.246723 567,317.157773 L567,320.82561 C567,324.73817 567.48,328.64922 567.48,328.64922 C567.48,328.64922 567.948,331.980184 569.3865,333.447016 C571.2135,335.373084 573.612,335.312658 574.68,335.513574 C578.52,335.885191 591,336 591,336 C591,336 601.086,335.984894 607.803,335.495446 C608.7405,335.382148 610.7865,335.373084 612.612,333.447016 C614.0505,331.980184 614.52,328.64922 614.52,328.64922 C614.52,328.64922 615,324.73817 615,320.82561 L615,317.157773 C615,313.246723 614.52,309.334163 614.52,309.334163 L614.52,309.334163 Z"></path>
+                                                </g>
+                                                <g transform="translate(-1659.000000, -479.000000)"></g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            
+                            
+                            
+                                <li>
+                                    <a aria-label="Instagram" class="instagram" target="_blank" href="">
+                                        <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Instagram</title>
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-642.000000, -295.000000)" fill="#000000">
+                                                    <path d="M666.000048,295 C659.481991,295 658.664686,295.027628 656.104831,295.144427 C653.550311,295.260939 651.805665,295.666687 650.279088,296.260017 C648.700876,296.873258 647.362454,297.693897 646.028128,299.028128 C644.693897,300.362454 643.873258,301.700876 643.260017,303.279088 C642.666687,304.805665 642.260939,306.550311 642.144427,309.104831 C642.027628,311.664686 642,312.481991 642,319.000048 C642,325.518009 642.027628,326.335314 642.144427,328.895169 C642.260939,331.449689 642.666687,333.194335 643.260017,334.720912 C643.873258,336.299124 644.693897,337.637546 646.028128,338.971872 C647.362454,340.306103 648.700876,341.126742 650.279088,341.740079 C651.805665,342.333313 653.550311,342.739061 656.104831,342.855573 C658.664686,342.972372 659.481991,343 666.000048,343 C672.518009,343 673.335314,342.972372 675.895169,342.855573 C678.449689,342.739061 680.194335,342.333313 681.720912,341.740079 C683.299124,341.126742 684.637546,340.306103 685.971872,338.971872 C687.306103,337.637546 688.126742,336.299124 688.740079,334.720912 C689.333313,333.194335 689.739061,331.449689 689.855573,328.895169 C689.972372,326.335314 690,325.518009 690,319.000048 C690,312.481991 689.972372,311.664686 689.855573,309.104831 C689.739061,306.550311 689.333313,304.805665 688.740079,303.279088 C688.126742,301.700876 687.306103,300.362454 685.971872,299.028128 C684.637546,297.693897 683.299124,296.873258 681.720912,296.260017 C680.194335,295.666687 678.449689,295.260939 675.895169,295.144427 C673.335314,295.027628 672.518009,295 666.000048,295 Z M666.000048,299.324317 C672.40826,299.324317 673.167356,299.348801 675.69806,299.464266 C678.038036,299.570966 679.308818,299.961946 680.154513,300.290621 C681.274771,300.725997 682.074262,301.246066 682.91405,302.08595 C683.753934,302.925738 684.274003,303.725229 684.709379,304.845487 C685.038054,305.691182 685.429034,306.961964 685.535734,309.30194 C685.651199,311.832644 685.675683,312.59174 685.675683,319.000048 C685.675683,325.40826 685.651199,326.167356 685.535734,328.69806 C685.429034,331.038036 685.038054,332.308818 684.709379,333.154513 C684.274003,334.274771 683.753934,335.074262 682.91405,335.91405 C682.074262,336.753934 681.274771,337.274003 680.154513,337.709379 C679.308818,338.038054 678.038036,338.429034 675.69806,338.535734 C673.167737,338.651199 672.408736,338.675683 666.000048,338.675683 C659.591264,338.675683 658.832358,338.651199 656.30194,338.535734 C653.961964,338.429034 652.691182,338.038054 651.845487,337.709379 C650.725229,337.274003 649.925738,336.753934 649.08595,335.91405 C648.246161,335.074262 647.725997,334.274771 647.290621,333.154513 C646.961946,332.308818 646.570966,331.038036 646.464266,328.69806 C646.348801,326.167356 646.324317,325.40826 646.324317,319.000048 C646.324317,312.59174 646.348801,311.832644 646.464266,309.30194 C646.570966,306.961964 646.961946,305.691182 647.290621,304.845487 C647.725997,303.725229 648.246066,302.925738 649.08595,302.08595 C649.925738,301.246066 650.725229,300.725997 651.845487,300.290621 C652.691182,299.961946 653.961964,299.570966 656.30194,299.464266 C658.832644,299.348801 659.59174,299.324317 666.000048,299.324317 Z M666.000048,306.675683 C659.193424,306.675683 653.675683,312.193424 653.675683,319.000048 C653.675683,325.806576 659.193424,331.324317 666.000048,331.324317 C672.806576,331.324317 678.324317,325.806576 678.324317,319.000048 C678.324317,312.193424 672.806576,306.675683 666.000048,306.675683 Z M666.000048,327 C661.581701,327 658,323.418299 658,319.000048 C658,314.581701 661.581701,311 666.000048,311 C670.418299,311 674,314.581701 674,319.000048 C674,323.418299 670.418299,327 666.000048,327 Z M681.691284,306.188768 C681.691284,307.779365 680.401829,309.068724 678.811232,309.068724 C677.22073,309.068724 675.931276,307.779365 675.931276,306.188768 C675.931276,304.598171 677.22073,303.308716 678.811232,303.308716 C680.401829,303.308716 681.691284,304.598171 681.691284,306.188768 Z"></path>
+                                                </g>
+                                                <g transform="translate(-1734.000000, -472.000000)"></g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </span>
+
+                    <span class="toolbar-cart">
+                        <a class="current-cart toggle-cart-summary" href="">
+                          <span class="beside-svg">
+                              <span class="theme-money">
+                                  <span class="money">
+                                      $0.00
+                                    </span>
+                                </span>
+                            </span>
+                          <span class="current-cart-icon">
+                            <svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g transform="translate(-0.500000, 0.500000)">
+                                    <path stroke="currentColor" stroke-width="0.5" d="M10.5,5.75 L10.5,0 L12,0 L12,5.75 L21.5,5.75 L17.682,17.75 L4.318,17.75 L0.5,5.75 L10.5,5.75 Z M2.551,7.25 L5.415,16.25 L16.585,16.25 L19.449,7.25 L2.55,7.25 L2.551,7.25 Z"></path>
+                                </g>
+                            </svg>
+                          </span>
+                        </a>
+                      </span>
+                    </div>
+
+
+                    <div class="logo-nav">
+                           <div class="logo">
+                                <a href="">
+                                    <img src="img/Canopy_Farm_Shop_Logo_2_240x.png" alt="">
+                                </a>
+                           </div> 
+                           <nav class="main-nav desktop">
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Home</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown drop-big">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Groceries</span>
+                                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+                                                <path d="M0-.75h24v24H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                        <!-- ========================== Submeniu (didelis) ========================== -->
+                                        <div class="sub-nav">
+                                            <div class="sub-nav-links-column">
+                                              <div class="sub-nav-links-column-grid-wrapper">
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href="">
+                                                    <span class="sub-nav-item-title">
+                                                        All Products
+                                                    </span>
+                                                </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">
+                                                        Fruit &amp; Vegetables
+                                                    </span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Meat &amp; Fish</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Store Cupboard</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Cheese &amp; Dairy</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">Store Cupboard</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Unsalted Cashews</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Flatleaf Parsley</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="" >
+                                                    <span class="sub-nav-item-link-title">Vanilla Pods</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Mixed Olives</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">The Bakery</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Croissants</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Pretzels</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">French Bread</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Macaroons</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">Cheese &amp; Dairy</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Parmesan</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Cottage Cheese</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Milk</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Mozarella</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">Meat &amp; Fish</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Smoked Salmon</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Fillet of Beef</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Cornfed Chicken</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Turkey Fillet</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">Fruit &amp; Vegetables</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Fennel Bulb</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">New Potatoes</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Beets</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Nectarines</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">In Season</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Apples</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Arugula</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Smoked Salmon</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">New Potatoes</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                              <ul class="sub-nav-list">
+                                                <li class="sub-nav-item">
+                                                  <a href=""><span class="sub-nav-item-title">New In</span></a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Vanilla Pods</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Organic Mixed Olives</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Cornfed Chicken</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">Flatleaf Parsley</span>
+                                                  </a>
+                                                </li>
+                                                
+                                                <li class="sub-nav-item">
+                                                  <a class="sub-nav-item-link" href="">
+                                                    <span class="sub-nav-item-link-title">See All &gt;</span>
+                                                  </a>
+                                                </li>
+                                                
+                                              </ul>
+                                              
+                                            </div>
+                                          </div>
+                              
+                                          
+                                        </div>
+                                        <!-- ======================================================== -->
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Our Story</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Field Notes</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Contact</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown drop-norm">
+                                        <a class="nav-item-link" href="">
+                                            <span class="nav-item-link-title">Demos</span>
+                                            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+                                                <path d="M0-.75h24v24H0z" fill="none"></path>
+                                            </svg>
+                                        </a>
+                                        <!-- ========================== Submeniu (mažas) ========================== -->
+                                        <div class="sub-nav">
+                                            <div class="sub-nav-inner">
+                                                <ul class="sub-nav-list">
+                                
+                                                    <li class="sub-nav-item">
+                                                    <a class="sub-nav-item-link" href="" rel="nofollow" target="_blank">
+                                                        <span class="sub-nav-item-link-title">Elda : Jewellery</span>
+                                                        
+                                                    </a>
+                                                    
+                                                    </li>
+                                    
+                                                    <li class="sub-nav-item">
+                                                    <a class="sub-nav-item-link" href="" rel="nofollow" target="_blank">
+                                                        <span class="sub-nav-item-link-title">Thread : Apparel</span>
+                                                        
+                                                    </a>
+                                                    
+                                                    </li>
+                                    
+                                                    <li class="sub-nav-item">
+                                                    <a class="sub-nav-item-link" href="" rel="nofollow" target="_blank">
+                                                        <span class="sub-nav-item-link-title">Kiln : Groceries</span>
+                                                        
+                                                    </a>
+                                                    
+                                                    </li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                           </nav>
+
+                    </div>
+                </div>
+            </header>
+            <main>
+
+                <!-- ===============slideshow================ -->
+                <div class="slideshow">
+                  <section>
+                    <div class="container">
+                        <div class="image-wrapper">
+                            <img src="img/Gummidge_Slider_1400x600_Layer_14_1728x.webp" alt="">
+                        </div>
+                    </div>
+                </section> 
+                </div>
+                 <!-- ===============Prisistatymo tekstas================ -->
+                 <div class="introduction">
+                    <section>
+                     <div class="container  align-center">
+                        <h1 class="section-heading">Welcome to Canopy Farm Shop</h1>
+                        <div class="reading-column rte">
+                            <p>
+                                Since 1979,&nbsp;we have been one of the most pioneering farms in the country. We lead by example; farming, growing and producing according to sustainable organic principles because we&nbsp;respect and care for the land we work.
+                            </p>
+                        </div>
+                     </div>
+                    </section>  
+                 </div>
+                 <!-- ===============Produktų gridas - daržovės ================ -->
+                 <div class="products-vegies">
+                     <div class="container">
+                        <!-- ===============Produktų grupės headeris (daržovės) ================ -->
+                        <div class="opposing-items">
+                            <h1 class="section-heading left">
+                                <a href="">
+                                    Fruit; Vegetables
+                                </a>
+                            </h1>
+                            <a class="more-link" href="">
+                              View all
+                            </a>
+                        </div>
+                        <!-- ===============Produktų gridas (daržovės) ================ -->
+                        <div class="product-grid flexgrid">
+                            <!-- ===============Produkto blokas I ================ -->
+                            <div class="product-block sm-1-2 md-1-3 lg-1-5">
+                                <div class="image">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/Fruit_Vegetables1200x1200_FENNEL_360x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <span class="product-label">
+                                        <span>
+                                            Only 4 left!
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-block__weight">
+                                    <div class="product-block__weight-value">
+                                        0.44 lb
+                                    </div>
+                                </div>
+
+                                <div class="product-block__title-price">
+                                    <a class="title" href="">
+                                      Fennel Bulb
+                                    </a>
+                                    <div class="price ">
+                                      <span class="amount theme-money">
+                                          <span class="money">
+                                              $1.50
+                                           </span>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="product-add">
+                                    <button type="submit" name="add" class="btn ">Add to cart</button>
+                                </div>  
+                                <div class="themed-product-reviews">
+                                    <span class="spr-starrating">
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                    </span>
+                                    <span class="spr-badge-caption">1 review</span>
+                              </span>
+                              
+                                  </div>
+                            </div>
+                            <!-- ===============Produkto blokas II ================ -->
+                            <div class="product-block sm-1-2 md-1-3 lg-1-5">
+                                <div class="image">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/Fruit_Vegetables1200x1200_POTATOES_360x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <!-- <span class="product-label">
+                                        <span>
+                                            Only 4 left!
+                                        </span>
+                                    </span> -->
+                                </div>
+
+                                <div class="product-block__weight">
+                                    <div class="product-block__weight-value">
+                                        2.2 lb
+                                    </div>
+                                </div>
+
+                                <div class="product-block__title-price">
+                                    <a class="title" href="">
+                                      New Potatoes
+                                    </a>
+                                    <div class="price ">
+                                      <span class="amount theme-money">
+                                          <span class="money">
+                                             From $3.50
+                                           </span>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="product-add">
+                                    <button type="submit" name="add" class="btn ">Add to cart</button>
+                                </div>         
+                                 <!-- <a href="" class="btn product-add">Add to cart</a> -->
+                                <div class="themed-product-reviews">
+                                    <span class="spr-starrating">
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon empty"></i>
+                                    </span>
+                                    <span class="spr-badge-caption">1 review</span>
+                              </span>
+                              
+                                  </div>
+                            </div>
+                            <!-- ===============Produkto blokas III ================ -->
+                            <div class="product-block sm-1-2 md-1-3 lg-1-5 sm-hidden">
+                                <div class="image">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/Fruit_Vegetables1200x1200_sprouts_360x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <span class="product-label product-label-sale">
+                                        <span>
+                                            Sale
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <!-- <div class="product-block__weight">
+                                    <div class="product-block__weight-value">
+                                        0.44 lb
+                                    </div>
+                                </div> -->
+
+                                <div class="product-block__title-price">
+                                    <a class="title" href="">
+                                        Brussel Sprouts
+                                    </a>
+                                    <div class="price ">
+                                      <span class="amount theme-money">
+                                          <span class="money">
+                                              From $4.50
+                                           </span>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="product-add">
+                                    <button type="submit" name="add" class="btn ">Add to cart</button>
+                                </div>  
+                                <div class="themed-product-reviews">
+                                    <span class="spr-starrating">
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                    </span>
+                                    <span class="spr-badge-caption">2 reviews</span>
+                              </span>
+                              
+                                  </div>
+                            </div>
+                            <!-- ===============Produkto blokas IV ================ -->
+                            <div class="product-block sm-1-2 md-1-3 lg-1-5 md-hidden">
+                                <div class="image">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/Fruit_Vegetables1200x1200_nectarines_360x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+
+                               
+                                <div class="product-block__title-price">
+                                    <a class="title" href="">
+                                      Nectarines
+                                    </a>
+                                    <div class="price ">
+                                      <span class="amount theme-money">
+                                          <span class="money">
+                                              $6.00
+                                           </span>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="product-add">
+                                    <button type="submit" name="add" class="btn ">Add to cart</button>
+                                </div>  
+                                <div class="themed-product-reviews">
+                                    <span class="spr-starrating">
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                    </span>
+                                    <span class="spr-badge-caption">1 review</span>
+                              </span>
+                              
+                                  </div>
+                            </div>
+                            <!-- ===============Produkto blokas V ================ -->
+                            <div class="product-block sm-1-2 md-1-3 lg-1-5 lg-hidden">
+                                <div class="image">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/Fruit_Vegetables1200x1200_BEETS_360x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <span class="product-label">
+                                        <span>
+                                            Only 4 left!
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="product-block__weight">
+                                    <div class="product-block__weight-value">
+                                        2.2 lb
+                                    </div>
+                                </div>
+
+                                <div class="product-block__title-price">
+                                    <a class="title" href="">
+                                        Organic Beets 
+                                    </a>
+                                    <div class="price ">
+                                      <span class="amount theme-money">
+                                          <span class="money">
+                                              $7.50
+                                           </span>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="product-add">
+                                    <button type="submit" name="add" class="btn ">Add to cart</button>
+                                </div>  
+                                <div class="themed-product-reviews">
+                                    <span class="spr-starrating">
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon"></i>
+                                        <i class="spr-icon empty"></i>
+                                    </span>
+                                    <span class="spr-badge-caption">1 review</span>
+                              </span>
+                              
+                                  </div>
+                            </div>
+
+                        </div>
+                    </div>`
+                    <!-- ====================== Foto-istorijų blokas ======================== -->
+                    <div class="foto-tiles">
+                       <section>
+                            <div class="container">
+                                <div class="tile-group">
+                                    <div class="tile-row">
+                                        <div class="tile-1">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Gummidge_Slider_1400x600_Layer_5_1080x.webp" alt="">
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="inner">
+                                                    
+                                                        <div class="filter-group__caption">
+                                                            Our Story
+                                                        </div>
+                                                    
+                                                        <div class="filter-group__sub-caption">
+                                                            Read More
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-2">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Gummidge_Slider_800x800_Layer_2_1080x.webp" alt="">
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="inner">
+                                                    
+                                                        <div class="filter-group__caption">
+                                                            The Dairy
+                                                        </div>
+                                                    
+                                                        <div class="filter-group__sub-caption">
+                                                            Shop Now
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tile-row">
+                                        <div class="tile-3">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Gummidge_Slider_800x800_Layer_18_1080x.webp" alt="">
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="inner">
+                                                    
+                                                        <div class="filter-group__caption">
+                                                            Field Notes
+                                                        </div>
+                                                    
+                                                        <div class="filter-group__sub-caption">
+                                                            Read our blog
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-4">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Gummidge_Slider_1400x600_Layer_15_1080x.webp" alt="">
+                                                </div>
+                                                <div class="overlay">
+                                                    <div class="inner">
+                                                    
+                                                        <div class="filter-group__caption">
+                                                            Farm Shop
+                                                        </div>
+                                                    
+                                                        <div class="filter-group__sub-caption">
+                                                            Shop Now
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> 
+                    </div>
+                     <!-- ====================== Shop juosta ======================== -->
+                     <div class="shop">
+                        <section>
+                            <div class="container">
+                                <!-- ===============Shop sekcijos headeris (shop) ================ -->
+                                <div class="opposing-items">
+                                    <h1 class="section-heading left">
+                                        <a href="">
+                                            Shop
+                                        </a>
+                                    </h1>
+                                    <a class="more-link" href="">
+                                    View all
+                                    </a>
+                                </div>
+                                <div class="product-grid flexgrid">
+                                    <!-- ===============Shop Produktų grupės blokas I ================ -->
+                                    <div class="product-group-block sm-1-2 md-1-5 lg-1-5">
+                                        <div class="image">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Fruit_Vegetables1200x1200_APPLES_1080x.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+        
+                                                
+                                        <div class="product-group-block__title">
+                                            <a class="title" href="">
+                                              Fruit & Vegetables
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <!-- ===============Shop Produktų grupės blokas II ================ -->
+                                     <div class="product-group-block sm-1-2 md-1-5 lg-1-5">
+                                        <div class="image">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Meat_Fish_1200x1200_SMOKEDSALMON_1080x.webp" alt="">
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+        
+                                                
+                                        <div class="product-group-block__title">
+                                            <a class="title" href="">
+                                              Meat & Fish
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <!-- ===============Shop Produktų grupės blokas III ================ -->
+                                     <div class="product-group-block sm-1-2 md-1-5 lg-1-5">
+                                        <div class="image">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Cheese_Dairy_1200x1200_SOURCREAM_1080x.webp" alt="">
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+        
+                                                
+                                        <div class="product-group-block__title">
+                                            <a class="title" href="">
+                                              Cheese & Dairy
+                                            </a>
+                                        </div>
+                                    </div>
+                                     <!-- ===============Shop Produktų grupės blokas IV ================ -->
+                                     <div class="product-group-block sm-1-2 md-1-5 lg-1-5">
+                                        <div class="image">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Bakery1200x1200_CROISSANTS_1080x.jpg" alt="">
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+        
+                                                
+                                        <div class="product-group-block__title">
+                                            <a class="title" href="">
+                                              The Bakery
+                                            </a>
+                                        </div>
+                                    </div>
+                                     <!-- ===============Shop Produktų grupės blokas V ================ -->
+                                     <div class="product-group-block sm-1-2 md-1-5 lg-1-5">
+                                        <div class="image">
+                                            <a href="">
+                                                <div class="image-wrapper">
+                                                    <img src="img/Store_Cupbord_1200x1200_ALMONDS_1080x.webp" alt="">
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+        
+                                                
+                                        <div class="product-group-block__title">
+                                            <a class="title" href="">
+                                              Store Cupboard
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                     </div>
+                     <!-- ====================== Video sekcija ======================== -->
+                     <div class="video">
+                         <section>
+                             <div class="container">
+                                 <div class="video-container">
+                                     <div class="video-container__video">
+                                         <video autoplay="autoplay" muted="muted" loop="loop" playsinline src="img/pexels-polina-kovaleva-5420398.mp4"></video>
+                                     </div>
+
+
+                                     <!-- ====================== Video sekcijos tekstinis turinys ======================== -->
+                                     <div class="video-container__overlay">
+                                        <div class="inner ">
+                                            <div class="line-1">
+                                                A passion for sustainable organic farming
+                                            </div>
+                                            <div class="line-2">
+                                                Since 1979
+                                            </div>
+                                            <div class="line-3">
+                                                <a class="btn" href="">
+                                                    Read Our Story
+                                                </a>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </section>
+                     </div>
+                     <!-- ====================== Dovanų kortelė ======================== -->
+                     <div class="gift-card">
+                         <section>
+                             <div class="container">
+                                 <!-- ====================== Dovanų kortelės kairė pusė - foto ======================== -->
+                                <div class="gift-card-photo">
+                                    <a href="">
+                                        <div class="image-wrapper">
+                                            <img src="img/CanopyFarmShopGIFTCARD_v2__10_1080x.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- ====================== Dovanų kortelės dešinė pusė - aprašymas ir krepšelio mygtukai ======================== -->
+                                <div class="gift-card-info">
+                                    <div class="gift-card-info__title">
+                                        <h1 class="product-title">
+                                            <a href="" title="">
+                                                Gift Card
+                                            </a>
+                                        
+                                        </h1>
+                                        <div id="price" class="product-price">
+                                            <span class="current-price theme-money">
+                                                <span class="money">$10.00</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="gift-card-info__description">
+                                        <div class="rte">
+                                            <p>
+                                                Gift cards are delivered by email and contain instructions to redeem them at the checkout.&nbsp;Our gift card have no additional processing fees.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gift-card-info__moreinfo">
+                                        <a class="more-link" href="">
+                                            Full details
+                                        </a>
+                                    </div>
+                                    <div class="gift-card-info__selection">
+                                        <div class="selector-wrapper">
+                                            <label for="option-amount-1590506794009">
+                                                Amount
+                                            </label>
+                                             <!-- ====================== Dovanų kortelių selektorius ======================== -->
+                                            <div class="pretty-select">
+                                                <select id="" class="replaced">
+                      
+                                                    <option value="$10.00 USD" selected="">
+                                                    $10.00 USD
+                                                    </option>
+                                                    
+                                                    <option value="$25.00 USD">
+                                                    $25.00 USD
+                                                    </option>
+                                                    
+                                                    <option value="$50.00 USD">
+                                                    $50.00 USD
+                                                    </option>
+                                                    
+                                                    <option value="$100.00 USD">
+                                                    $100.00 USD
+                                                    </option>
+                                                </select>
+                                                
+                                                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+                                                    <path d="M0-.75h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="purchase-buttons">
+                                            <span class="payment-and-quantity__add">
+                                                <button type="submit" name="add" class="btn">Add to Cart</button>
+                                              </span>
+                                              <div>
+                                                <button type="button" class="btn">Buy it now</button>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </section>
+
+                     </div>
+                     <!-- ====================== Kita ======================== -->
+                 </div>
+            </main>
+            <footer></footer>
+        </div>
+
+    </div>
+</body>
+</html>

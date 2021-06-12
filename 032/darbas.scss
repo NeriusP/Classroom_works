@@ -1,0 +1,18 @@
+:root {
+    --fsize1: 30px;
+    --fsize2: 20px;
+    --fsize3: 50px;
+}
+
+h1 {
+    font-size: var(--fsize1);
+        span {
+            font-size: var(--fsize3);
+        }
+}
+
+h2 {
+    --fsize2: 15px;
+    font-size: var(--fsize2);
+    
+}

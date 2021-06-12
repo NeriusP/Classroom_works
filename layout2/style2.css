@@ -1,0 +1,8 @@
+@import url("reset.css");
+@import 'vars';
+@import url('grid.css');
+
+header {
+    background-color: deepskyblue;
+    height: 60px;
+}

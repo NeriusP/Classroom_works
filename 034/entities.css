@@ -1,0 +1,5 @@
+#symbol::after {
+    content: '999 \00A9';
+    display: block;
+    color: 
+}

@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.container {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid lightcyan;
+}
+
+/* attr(name)*/
+
+[for=labas-id]::after {
+    content: attr(data-label-text);
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+[for=labas-id]:hover::after {
+    content: attr(data-label-hello);
+       
+}
+
+/* calc() */
+
+#calc-use {
+    display:flex;
+}
+
+#calc-use1 {
+    height: 20px;
+    background-color:lightpink;
+    width: calc(100vh - 100%);
+}
+
+#calc-use2 {
+    height: 20px;
+    background-color:lightsteelblue;
+    width: calc(100% - 100vh);
+}
+/* cubic-bezier */
+#bezier {
+    display: block;
+    position: relative;
+    height: 100px;
+}
+
+#cubic {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: mediumblue;
+    transition: left 2s;
+    transition-timing-function: cubic-bezier(.91,1.16,.85,-1.2);
+}
+
+#go {
+    margin-bottom: 10px;
+    cursor: crosshair;
+    color: midnightblue;
+    display: inline-block;
+}
+
+#go:hover + #bezier #cubic{
+    left: calc(100% - 100px);
+    
+}
+
+/* rgb() hsl() */
+
+#rgb, #hsl {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#rgb {
+    background-color: rgb(204, 229, 255);
+}
+
+#hsl {
+    background-color: hsl(176, 53%, 71%);
+}
+
+/* rgba() hsla() - spalvos su permatomumu */
+
+#rgba, #hsla {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+
+}
+#background1 {
+    padding: 25px;
+    background-image: url('background1.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+#rgba {
+    background-color: rgba(204, 229, 255, 0.3);
+}
+
+#hsla {
+    background-color: hsla(176, 53%, 71%, 0.7);
+}
+
+
+/* linear-gradient(direction, color1, color2, color3) */
+
+#background2 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, green, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+#background3 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top, green, mediumslateblue, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+/* radial-gradient(shape, size, position, color1, color2, color3) */
+
+#background4 {
+    padding: 25px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(circle, green, mediumslateblue, violet);
+    background-position: center;
+    background-size: contain;
+}
+
+#background5 {
+    padding: 25px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(closest-side at 30% 30%, green, mediumslateblue, #ff000050);
+    background-position: center;
+    background-size: contain;
+}
+
+/* repeating-linear-gradient(angle, direction, color1, color2, color3) */
+#background6 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-linear-gradient(to bottom, green, mediumslateblue 50px);
+    background-position: center;
+    background-size: contain;
+}    
+#background7 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-linear-gradient(45deg, green, mediumslateblue 10px, violet 20px);
+    background-position: center;
+    background-size: contain;
+}
+
+/* repeating-radial-gradient */
+
+#background8 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-radial-gradient(circle, green, mediumslateblue 4px, violet 10px);
+    background-position: center;
+    background-size: contain;
+}    
+#background9 {
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-image: repeating-radial-gradient(closest-side at 30% 30%, green, mediumslateblue 4px, #ff000050 10px);
+    background-position: center;
+    background-size: contain;
+}
