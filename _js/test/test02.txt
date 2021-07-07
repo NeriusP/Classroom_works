@@ -1,0 +1,27 @@
+01-20210524_181050-js start-Įžanga į JavaScriptą, operatoriai, kintamieji.mp4
+02-20210525_182457-JS palyginimo operatoriai, if-else if-else.mp4
+03 20210526_180950-comparison logical operators-Loginiai operatoriai AND, OR ir jų naudojimas.mp4
+04 Loops-20210527_181337-Ciklai.mp4
+05 Loops Praktika-20210528_181130-Uždavinių su ciklais sprendimas.mp4
+06 Loops Praktika-20210529_101224-Uždavinių su ciklais sprendimas.mp4
+07 Loops the end-20210531_181918-Break, continue ir switch naudojimas.mp4
+08 20210601_181224-JS Arrays, masyvai.mp4
+09-20210602_180652-Uždavinių su masyvais sprendimas.mp4
+10 objects-20210603_181800-Uždavinių su masyvais sprendimas, Objektai.mp4
+11 string, number as obj + functions-20210604_180828-Stringų metodai, number metodai, funkcijos.mp4
+12 functions-20210605_105113-Uždavinių su f-jom sprendimas_01.mp4
+12 functions-20210605_121613-Uždavinių su f-jom sprendimas_02.mp4
+13 functions-20210607_180749-Anoniminės f-jos, arrow f-jos, map, sort naudojimas, uždaviniai.mp4
+14 functions end 20210608_180336-this naudojimas, arrow ir paprastų f-jų skirtumai.mp4
+15 DOM-20210609_180519-Klasės, įvadas į DOM.mp4
+16 Events Mouse events-20210610_185141-Eventai DOM'e.mp4
+17 all DOM-20210611_181052-Uždaviniai, createElement, appendChild, insertBefore().mp4
+18 DOM-20210612_100204-Uždaviniai_Part1.mp4
+18 DOM-20210612_123340-Uždaviniai_Part2.mp4
+19 DOM-20210614_180504-Uždavinių vertimas į rodyklines f-jas.mp4
+20 DOM-20210615_180854-setAttribute, Form-value, innerHTML, dataset.mp4
+21 API-20210616_180540-Fetch API.mp4
+22 Kartojimas-20210617_182144-Uždavinių sprendimas.mp4
+23 Kartojimas-20210618_181802-Meeting Recording.mp4
+24 Kartojimas-20210619_101306-Meeting Recording.mp4
+24 Kartojimas-20210619_122424-Meeting Recording.mp4

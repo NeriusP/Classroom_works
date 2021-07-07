@@ -1,0 +1,43 @@
+<span>Codes</span>
+<input type="file" id="file-input"/> 
+<span>Files</span>
+<input type="file" id="file-input_d"/>                  
+<button id="read-button">Generate</button>                                    
+<pre id="file-contents"></pre>                                                 
+                                                                               
+<script defer>      
+	var textfile1 = [];      
+	var textfile2 = [];                                                                  
+	document.querySelector("#read-button").addEventListener('click', function() {
+		let file1 = document.querySelector("#file-input").files[0];    
+		console.log(file1);
+		let file2 = document.querySelector("#file-input_d").files[0];       
+		console.log(file2);        
+		let reader1 = new FileReader(); 
+		let reader2 = new FileReader();   
+		                                      
+		reader1.addEventListener('load', function(e) {                              
+	    		let text = e.target.result;
+	    		let lines =  text.split(/\n/);                                    
+		//		console.log(lines);
+		//		textfile1 = lines.slice();
+				
+		textfile1 = JSON.parse(JSON.stringify(lines));
+		console.log('textfile1 ', textfile1);
+	    });                   
+		reader2.addEventListener('load', function(e) {                              
+	    		let text = e.target.result;
+	    		let lines =  text.split(/\n/);                                    
+     
+				//	console.log(lines);
+				textfile2 = lines.slice();
+					console.log('textfile2 ', textfile2);
+	   });                                                                          
+		reader1.readAsText(file1);  
+		reader2.readAsText(file2);    
+		console.log(textfile1);
+		console.log(textfile2);                            
+		                            
+	});   
+		                                                               
+</script>                                                                      

@@ -1,0 +1,78 @@
+div.app_container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+div.list_container {
+    width: 500px;
+    height: 50vh;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 3%;
+    text-align: center;
+    -ms-flex-align: center;
+    /* flex: 1, 1, 1; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#toDoList{
+    background-color: rgb(243, 169, 169);
+}
+
+div#inProgressList{
+    background-color: lightyellow;
+}
+
+div#doneList{
+    background-color: rgb(199, 240, 199);
+}
+
+div.delete {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    /* border: solid 1px red; */
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+
+div.task {
+    margin: 4px 20px;
+    width: 95%;
+    height: auto;
+    background-color: white;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+div.to-do{}
+
+input {
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+textarea {
+   
+}
+
+span {
+    width: 100%;
+    text-align: left;
+    /* word-wrap: break-word; */
+}
+
+/* div#to_do input{
+    width: 400px;
+    height: 50px;
+} */

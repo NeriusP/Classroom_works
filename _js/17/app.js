@@ -18,7 +18,7 @@ a02.style.color = 'red';
 
 var changeColor = function(eventas) {
     //eventas.target.style.color = 'blue';
-    eventas.preventDefault(); // preventDefault() panaikina defaultinė elemento elgesį, pvz. neperkrauna psl. paspaudus ant linko šiuo atveju
+    eventas.preventDefault(); // preventDefault() panaikina defaultinį elemento elgesį, pvz. neperkrauna psl. paspaudus ant linko šiuo atveju
     a02.style.color = 'blue';
 }
 
