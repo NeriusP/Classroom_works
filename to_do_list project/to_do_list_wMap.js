@@ -135,15 +135,16 @@ document.querySelector('input').addEventListener('click', () => {
 
     //================== Eventlisteneris, trinantis taską ir perkeliantis jį į 'progress' listą ==================
      taskSpan.addEventListener('dblclick', e => {
-        const progDiv = document.createElement('div');
-        progDiv.classList.add('task', 'in-progress');
-        const progSpan = document.createElement('span');
-        progSpan.setAttribute('name', e.target.getAttribute('name'));
-        console.log(e.target.getAttribute('name'));
-        const progDel = document.createElement('div');
-        progDel.classList.add('delete');
-        inProgressList.delTaskListen(progDel);
-        const progText = document.createTextNode(e.target.innerText);
+      //   const progDiv = document.createElement('div');
+      //   progDiv.classList.add('task', 'in-progress');
+      //   const progSpan = document.createElement('span');
+      //   progSpan.setAttribute('name', e.target.getAttribute('name'));
+      //  // console.log(e.target.getAttribute('name'));
+      //   const progDel = document.createElement('div');
+      //   progDel.classList.add('delete');
+      //   inProgressList.delTaskListen(progDel);
+      //   const progText = document.createTextNode(e.target.innerText);
+      inProgressList.createDOMTask(taskAttr, taskValue);
         //================== Išsaugojama į localStorage
         inProgressList.localStorSet(e.target.getAttribute('name'), e.target.innerText);
         //================== Trinama iš localStorage
@@ -179,11 +180,10 @@ document.querySelector('input').addEventListener('click', () => {
 
     })
 
-    taskSpan.appendChild(taskText);
-    taskDiv.appendChild(taskSpan);
-    //taskDel.appendChild(taskX);
-    taskDiv.appendChild(taskDel);
-    document.querySelector('div#to_do').appendChild(taskDiv);
+    // taskSpan.appendChild(taskText);
+    // taskDiv.appendChild(taskSpan);
+    // taskDiv.appendChild(taskDel);
+    // document.querySelector('div#to_do').appendChild(taskDiv);
     document.querySelector('textArea').value = '';
     //document.querySelector('div#to_do').appendChild(taskDiv.appendChild(taskSpan.appendChild(taskText)));
   }

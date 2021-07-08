@@ -114,13 +114,13 @@ console.log('Mapas, kuriame yra 3 reikšmes = "13"', mapasD);
 
 //F. Taip, kaip D sąlygoje tik 3 vienodos reikšmės gali būti bet kokie skaičiai.
 
-// const mapasF = new Map();
+const mapasF = new Map();
 
-// let counter = 0;
+let counter = 0;
 
-// do {
-//     const key = rand(10,20);
-//     const value = rand(10,20);
+do {
+    const key = rand(10,20);
+    const value = rand(10,20);
     
     
 //     if (value === 13) {
